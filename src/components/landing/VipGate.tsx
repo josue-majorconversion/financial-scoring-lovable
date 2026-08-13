@@ -41,7 +41,7 @@ export function VipGate() {
     const root = document.getElementById("site-root");
     if (!root) return;
     const active = open && !closing;
-    root.style.filter = active ? "blur(10px) brightness(0.35)" : "";
+    root.style.filter = active ? "blur(12px)" : "";
     root.style.transition = "filter 500ms ease";
     root.setAttribute("aria-hidden", active ? "true" : "false");
     root.style.pointerEvents = active ? "none" : "";
@@ -73,7 +73,7 @@ export function VipGate() {
       role="dialog"
       aria-modal="true"
       aria-label="Ignyte VIP access"
-      className={`fixed inset-0 z-[100] overflow-y-auto bg-background/95 px-4 py-8 backdrop-blur-sm transition-opacity duration-500 ${
+      className={`fixed inset-0 z-[100] overflow-y-auto px-4 py-8 transition-opacity duration-500 ${
         closing ? "opacity-0" : "opacity-100"
       }`}
     >
