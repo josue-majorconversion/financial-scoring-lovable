@@ -1,5 +1,4 @@
 import { TrendingUp, DollarSign, PhoneOff } from "lucide-react";
-import { ScoreLens } from "./ScoreLens";
 
 const indicators = [
   { icon: TrendingUp, label: "Make More Deals" },
