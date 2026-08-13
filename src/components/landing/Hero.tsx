@@ -22,7 +22,7 @@ export function Hero() {
           <ScoreLens score={87} className="h-24 w-24 animate-float-slow sm:h-32 sm:w-32" />
 
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
-            Leads are over
+            THE END OF TRADITIONAL LEAD BUYING
           </p>
 
           <h1 className="max-w-4xl font-display text-6xl font-bold uppercase leading-[0.9] sm:text-8xl lg:text-9xl">
@@ -31,7 +31,7 @@ export function Hero() {
           </h1>
 
           <p className="font-display text-2xl font-medium uppercase tracking-[0.04em] text-foreground/90 sm:text-3xl">
-            Buy certainty, not names.
+            STOP BUYING LEADS. START BUYING CERTAINTY.
           </p>
 
           <ul className="mt-2 grid w-full max-w-3xl grid-cols-3 gap-2 sm:gap-4">
