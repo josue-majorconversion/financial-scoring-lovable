@@ -10,6 +10,7 @@ import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
 import { WhatsNext } from "@/components/landing/WhatsNext";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
+import { VipGate } from "@/components/landing/VipGate";
 
 
 export const Route = createFileRoute("/")({
