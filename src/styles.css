@@ -293,10 +293,10 @@
 }
 
 @keyframes bar-rise {
-  from {
-    transform: scaleY(0.08);
+  0% {
+    transform: scaleY(0);
   }
-  to {
+  100% {
     transform: scaleY(1);
   }
 }
@@ -321,13 +321,31 @@
   }
 }
 
+@keyframes draw-line-repeat {
+  0% {
+    stroke-dashoffset: 300;
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 1;
+  }
+  70% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.85;
+  }
+}
+
 @utility animate-slide-in-right {
   animation: slide-in-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @utility animate-bar-rise {
   transform-origin: bottom;
-  animation: bar-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: bar-rise 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @utility animate-ring-out {
@@ -337,4 +355,9 @@
 @utility animate-draw-line {
   stroke-dasharray: 300;
   animation: draw-line 1.6s ease-out both;
+}
+
+@utility animate-draw-line-repeat {
+  stroke-dasharray: 300;
+  animation: draw-line-repeat 2.4s ease-in-out infinite;
 }
