@@ -33,6 +33,10 @@ export function Hero() {
             STOP BUYING LEADS. START BUYING CERTAINTY.
           </p>
 
+          <p className="max-w-2xl text-base font-semibold leading-relaxed text-foreground/80 sm:text-lg">
+            Financial Scoring helps agents recognize the needs, opportunities, and financial priorities hidden inside every prospect — before the conversation begins.
+          </p>
+
           <ul className="mt-2 grid w-full max-w-3xl grid-cols-3 gap-2 sm:gap-4">
             {indicators.map(({ icon: Icon, label }) => (
               <li
