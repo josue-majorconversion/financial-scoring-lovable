@@ -10,11 +10,11 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
     >
       <div className="absolute inset-0 grid-glow opacity-30" />
       {variant === "chart" ? (
-        <div className="relative flex h-16 items-end gap-2">
+        <div className="relative flex h-24 items-end gap-3">
           {bars.map((h, i) => (
             <span
               key={h}
-              className="w-5 rounded-t-md bg-gradient-mint animate-bar-rise"
+              className="w-7 rounded-t-lg bg-gradient-mint animate-bar-rise"
               style={{ height: `${h}%`, animationDelay: `${i * 140}ms` }}
             />
           ))}
@@ -22,17 +22,23 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
       ) : null}
 
       {variant === "spark" ? (
-        <svg viewBox="0 0 200 80" className="relative h-16 w-40">
+        <svg viewBox="0 0 200 80" className="relative h-20 w-52">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="var(--mint-soft)" />
+            </marker>
+          </defs>
           <polyline
             points="4,70 44,54 84,58 124,30 164,34 196,8"
             fill="none"
             stroke="var(--mint-soft)"
-            strokeWidth="4"
+            strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="animate-draw-line"
+            markerEnd="url(#arrowhead)"
+            className="animate-draw-line-repeat"
           />
-          <circle cx="196" cy="8" r="6" fill="var(--mint-soft)" className="animate-pulse-glow" />
+          <circle cx="196" cy="8" r="7" fill="var(--mint-soft)" className="animate-pulse-glow" />
         </svg>
       ) : null}
 
