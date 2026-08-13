@@ -50,7 +50,8 @@ function Index() {
         <FinalCta />
         <Footer />
       </main>
-      
+      </div>
+      <VipGate />
       <Toaster />
     </>
   );
