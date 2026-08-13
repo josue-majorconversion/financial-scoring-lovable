@@ -73,7 +73,7 @@ export function VipGate() {
       role="dialog"
       aria-modal="true"
       aria-label="Ignyte VIP access"
-      className={`fixed inset-0 z-[100] overflow-y-auto bg-background/95 px-4 py-8 backdrop-blur-sm transition-opacity duration-500 ${
+      className={`fixed inset-0 z-[100] overflow-y-auto bg-black/30 px-4 py-8 transition-opacity duration-500 ${
         closing ? "opacity-0" : "opacity-100"
       }`}
     >
