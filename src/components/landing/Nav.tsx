@@ -8,10 +8,10 @@ export function Nav() {
         aria-label="Primary"
         className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 sm:px-8"
       >
-        <a href="#top" className="rounded-md" aria-label="Financial Scoring home">
-          <Logo className="h-8 sm:h-9" />
+        <a href="#top" className="min-w-0 rounded-md" aria-label="Financial Scoring home">
+          <Logo className="h-7 sm:h-9" />
         </a>
-        <Cta href="#experience" size="md">
+        <Cta href="#experience" size="md" className="shrink-0 whitespace-nowrap px-4 text-xs">
           Experience Scoring
         </Cta>
       </nav>
