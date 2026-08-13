@@ -38,7 +38,7 @@ function Index() {
   return (
     <>
       <Nav />
-      <main className="min-h-screen bg-background pb-20 sm:pb-0">
+      <main className="min-h-screen bg-background">
         <Hero />
         <ExperienceScoring />
         <WhyClientsCare />
