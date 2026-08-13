@@ -11,7 +11,12 @@ export function ExperienceScoring() {
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Try it for yourself"
-          title="Experience Financial Scoring"
+          title={
+            <span className="block">
+              <span className="block">Experience</span>
+              <span className="block text-mint">Financial Scoring</span>
+            </span>
+          }
           subtitle="Answer the assessment and see how a few focused questions can create a clearer financial conversation."
         />
 
