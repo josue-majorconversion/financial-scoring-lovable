@@ -24,9 +24,9 @@ export function Hero() {
             THE END OF TRADITIONAL LEAD BUYING
           </p>
 
-          <h1 className="max-w-4xl font-display text-6xl font-bold uppercase leading-[0.9] sm:text-8xl lg:text-9xl">
-            Leads are{" "}
-            <span className="block text-[#ff3b30] sm:inline">dead.</span>
+          <h1 className="w-full font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
+            <span className="block">Leads are</span>
+            <span className="block text-[1.35em] text-[#ff3b30]">dead.</span>
           </h1>
 
           <p className="font-display text-2xl font-medium uppercase tracking-[0.04em] text-foreground/90 sm:text-3xl">
