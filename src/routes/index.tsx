@@ -10,7 +10,7 @@ import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
 import { WhatsNext } from "@/components/landing/WhatsNext";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
-import { StickyCta } from "@/components/landing/StickyCta";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -49,7 +49,7 @@ function Index() {
         <FinalCta />
         <Footer />
       </main>
-      <StickyCta />
+      
       <Toaster />
     </>
   );
