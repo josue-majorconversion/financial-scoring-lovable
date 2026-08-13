@@ -1,4 +1,6 @@
-type Variant = "chart" | "rings" | "shield" | "calls" | "spark" | "handshake";
+import { DollarSign } from "lucide-react";
+
+type Variant = "chart" | "rings" | "shield" | "calls" | "spark" | "handshake" | "money";
 
 const bars = [34, 52, 70, 92];
 
