@@ -4,7 +4,7 @@ interface RevealProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-  animation?: "slide-in-right" | "rise-in";
+  animation?: "slide-in-right" | "rise-in" | "ripple-slide";
 }
 
 export function Reveal({
