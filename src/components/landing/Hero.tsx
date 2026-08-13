@@ -19,7 +19,7 @@ export function Hero() {
 
       <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-28 sm:px-8">
         <div className="flex flex-col items-center gap-7 text-center">
-          <ScoreLens score={87} className="h-24 w-24 animate-float-slow sm:h-32 sm:w-32" />
+          
 
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
             THE END OF TRADITIONAL LEAD BUYING
