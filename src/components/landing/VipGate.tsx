@@ -101,7 +101,7 @@ export function VipGate() {
             Exclusive Event Access
           </p>
           <h2 className="mt-3 text-center font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl">
-            Welcome to
+            Welcome to Ignyte
             <span className="block text-gradient-mint">VIP Access</span>
           </h2>
           <p className="mx-auto mt-3 max-w-xs text-center text-sm leading-relaxed text-muted-foreground">
