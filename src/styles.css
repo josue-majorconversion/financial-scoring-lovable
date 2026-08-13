@@ -354,7 +354,11 @@
 }
 
 @utility animate-slide-in-right {
-  animation: slide-in-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: slide-in-right 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-ripple-slide {
+  animation: ripple-slide 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @utility animate-bar-rise {
