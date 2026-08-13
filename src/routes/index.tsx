@@ -10,6 +10,7 @@ import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
 import { WhatsNext } from "@/components/landing/WhatsNext";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
+import { VipGate } from "@/components/landing/VipGate";
 
 
 export const Route = createFileRoute("/")({
@@ -37,6 +38,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
+      <div id="site-root">
       <Nav />
       <main className="min-h-screen bg-background">
         <Hero />
@@ -49,7 +51,8 @@ function Index() {
         <FinalCta />
         <Footer />
       </main>
-      
+      </div>
+      <VipGate />
       <Toaster />
     </>
   );
