@@ -1,62 +1,66 @@
-import lockup from "@/assets/ignyte-lockup.png.asset.json";
+import { UserCheck, PhoneOff, TrendingUp } from "lucide-react";
 import { Cta } from "./Cta";
 import { ScoreLens } from "./ScoreLens";
 
+const indicators = [
+  { icon: UserCheck, label: "Scored prospects" },
+  { icon: PhoneOff, label: "Fewer calls" },
+  { icon: TrendingUp, label: "Bigger opportunities" },
+];
+
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden">
+    <section id="top" className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10 grid-glow" />
-      <div className="absolute left-1/2 top-[-10rem] -z-10 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-mint/15 blur-[120px] animate-pulse-glow" />
-      <div className="absolute bottom-0 right-[-6rem] -z-10 h-[22rem] w-[22rem] rounded-full bg-cyan/10 blur-[120px]" />
+      <div className="absolute left-1/2 top-[-12rem] -z-10 h-[30rem] w-[30rem] -translate-x-1/2 rounded-full bg-mint/15 blur-[130px] animate-pulse-glow" />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-24 -z-10 h-px bg-gradient-to-r from-transparent via-mint/60 to-transparent animate-scan-down"
+      />
 
-      <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col px-5 pb-16 pt-7 sm:px-8">
-        <header className="flex items-center justify-between gap-4">
-          <img
-            src={lockup.url}
-            alt="Ignyte Sales Conference"
-            className="h-10 w-auto sm:h-12"
-          />
-          <span className="hidden font-display text-xs font-bold uppercase tracking-[0.28em] text-mint sm:block">
-            FinancialScoring
-          </span>
-        </header>
+      <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-20 pt-28 sm:px-8">
+        <div className="flex flex-col items-center gap-7 text-center">
+          <ScoreLens score={87} className="h-24 w-24 animate-float-slow sm:h-32 sm:w-32" />
 
-        <div className="flex flex-1 flex-col items-center justify-center gap-8 py-12 text-center">
-          <ScoreLens score={87} className="h-28 w-28 animate-float-slow sm:h-36 sm:w-36" />
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
+            The end of traditional lead buying
+          </p>
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-mint/30 bg-mint/5 px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-mint">
-            We don't sell leads, we replace them
-          </div>
-
-          <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-            Your leads are{" "}
-            <span className="text-gradient-mint">more valuable</span> than you know
+          <h1 className="max-w-4xl font-display text-6xl font-bold uppercase leading-[0.92] sm:text-8xl lg:text-9xl">
+            Leads are <span className="text-gradient-mint">dead.</span>
           </h1>
 
+          <p className="font-display text-xl font-medium uppercase tracking-[0.04em] text-foreground/90 sm:text-3xl">
+            Stop buying leads. Start buying certainty.
+          </p>
+
           <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Financial scoring helps agents uncover more deals, higher commissions, and
-            fewer calls — from the leads you already have.
+            Financial Scoring helps agents recognize the needs, opportunities, and financial
+            priorities hidden inside every prospect — before the conversation begins.
           </p>
 
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-            <Cta href="#subscribe">Experience Scoring</Cta>
-            <Cta href="#how" variant="outline">
-              See How It Works
+            <Cta href="#experience">Experience Scoring</Cta>
+            <Cta href="#why-clients" variant="outline">
+              See Why It Matters
             </Cta>
           </div>
 
-          <a
-            href="#subscribe"
-            className="font-display text-sm font-semibold text-mint underline decoration-mint/40 underline-offset-4 transition-colors hover:decoration-mint"
-          >
-            Start My 14-Day Free Trial →
-          </a>
-        </div>
+          <ul className="mt-4 grid w-full max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3">
+            {indicators.map(({ icon: Icon, label }) => (
+              <li
+                key={label}
+                className="flex items-center justify-center gap-2 rounded-full border border-border bg-surface/60 px-4 py-3 text-sm font-medium text-foreground/90"
+              >
+                <Icon className="h-4 w-4 text-mint" aria-hidden="true" />
+                {label}
+              </li>
+            ))}
+          </ul>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          <span>More deals</span>
-          <span className="text-mint">Higher commissions</span>
-          <span>Fewer calls</span>
+          <p className="mt-4 font-display text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
+            Scan. Score. See the difference.
+          </p>
         </div>
       </div>
     </section>

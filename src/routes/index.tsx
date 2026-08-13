@@ -1,28 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
+import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
-import { Proof } from "@/components/landing/Proof";
-import { Comparison } from "@/components/landing/Comparison";
-import { ScoringShowcase } from "@/components/landing/ScoringShowcase";
-import { Benefits } from "@/components/landing/Benefits";
-import { Movement } from "@/components/landing/Movement";
-import { Testimonials } from "@/components/landing/Testimonials";
+import { WhatItDoes } from "@/components/landing/WhatItDoes";
+import { ExperienceScoring } from "@/components/landing/ExperienceScoring";
+import { WhyClientsCare } from "@/components/landing/WhyClientsCare";
+import { WhyAgentsCare } from "@/components/landing/WhyAgentsCare";
+import { RippleEffect } from "@/components/landing/RippleEffect";
+import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
+import { LearnMore } from "@/components/landing/LearnMore";
+import { WhatsNext } from "@/components/landing/WhatsNext";
 import { FinalCta } from "@/components/landing/FinalCta";
+import { Footer } from "@/components/landing/Footer";
+import { StickyCta } from "@/components/landing/StickyCta";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "FinancialScoring — Your Leads Are More Valuable Than You Know" },
+      { title: "Financial Scoring — Leads Are Dead. Start Buying Certainty." },
       {
         name: "description",
         content:
-          "Financial scoring helps insurance agents uncover more deals, higher commissions, and fewer calls from the leads they already have. We don't sell leads, we replace them.",
+          "Financial Scoring helps insurance agents recognize needs, priorities, and opportunities before the conversation begins. Try the live assessment.",
       },
-      { property: "og:title", content: "FinancialScoring — Score every lead. Make more money." },
+      { property: "og:title", content: "Financial Scoring — Leads Are Dead." },
       {
         property: "og:description",
         content:
-          "AI-powered financial scoring for insurance agents: more deals, higher commissions, fewer calls.",
+          "Stop buying leads. Start buying certainty. Experience the live Financial Scoring assessment.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,16 +38,23 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="min-h-screen bg-background">
-      <Hero />
-      <Proof />
-      <Comparison />
-      <ScoringShowcase />
-      <Benefits />
-      <Movement />
-      <Testimonials />
-      <FinalCta />
+    <>
+      <Nav />
+      <main className="min-h-screen bg-background pb-20 sm:pb-0">
+        <Hero />
+        <WhatItDoes />
+        <ExperienceScoring />
+        <WhyClientsCare />
+        <WhyAgentsCare />
+        <RippleEffect />
+        <VideoTestimonials />
+        <LearnMore />
+        <WhatsNext />
+        <FinalCta />
+        <Footer />
+      </main>
+      <StickyCta />
       <Toaster />
-    </main>
+    </>
   );
 }
