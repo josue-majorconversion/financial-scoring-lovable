@@ -1,11 +1,10 @@
 import { toast } from "sonner";
 import { Users, Mail, Gauge } from "lucide-react";
-import { SectionHeading } from "./SectionHeading";
 import { Cta } from "./Cta";
 
 const steps = [
   { icon: Users, title: "Join the community" },
-  { icon: Mail, title: "Look for the training email" },
+  { icon: Mail, title: "Watch for the training email" },
   { icon: Gauge, title: "Try Financial Scoring" },
 ];
 
@@ -33,38 +32,39 @@ export function SkoolButton({
 
 export function WhatsNext() {
   return (
-    <section className="border-y border-border/60 bg-surface/40 px-5 py-20 sm:px-8 sm:py-28">
+    <section className="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-28">
+      <div className="absolute inset-0 -z-10 grid-glow opacity-60" aria-hidden="true" />
       <div className="mx-auto max-w-4xl">
-        <SectionHeading eyebrow="What’s next" title="Learn it. Try it. Put it into practice." />
-
-        <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">
-          Join our Skool community to learn more about Financial Scoring, connect with the
-          community, and continue the conversation.
+        <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
+          What&rsquo;s next
         </p>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
-          Then watch your inbox for access to the training, where you’ll be able to explore the
-          process and try Financial Scoring for yourself.
-        </p>
+        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
+          Learn it. Try it. <span className="text-gradient-mint">Use it.</span>
+        </h2>
 
         <ol className="mt-10 grid gap-4 sm:grid-cols-3">
           {steps.map(({ icon: Icon, title }, i) => (
-            <li key={title} className="rounded-2xl card-surface p-5 text-center">
-              <span className="mx-auto grid h-11 w-11 place-items-center rounded-xl bg-mint/10">
-                <Icon className="h-5 w-5 text-mint" aria-hidden="true" />
+            <li
+              key={title}
+              className="flex items-center gap-4 rounded-2xl card-surface p-5 sm:flex-col sm:text-center"
+            >
+              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-mint/10">
+                <Icon className="h-7 w-7 text-mint" aria-hidden="true" />
               </span>
-              <p className="mt-4 font-display text-xs font-semibold uppercase tracking-[0.24em] text-mint">
-                Step {i + 1}
-              </p>
-              <p className="mt-1 font-display text-lg font-semibold uppercase">{title}</p>
+              <div className="min-w-0">
+                <p className="font-display text-xs font-semibold uppercase tracking-[0.24em] text-mint">
+                  Step {i + 1}
+                </p>
+                <p className="mt-1 font-display text-xl font-bold uppercase leading-tight">
+                  {title}
+                </p>
+              </div>
             </li>
           ))}
         </ol>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <div className="mt-10 flex justify-center">
           <SkoolButton className="w-full sm:w-auto" />
-          <Cta href="#experience" variant="outline" className="w-full sm:w-auto">
-            Experience Scoring Again
-          </Cta>
         </div>
       </div>
     </section>

@@ -1,81 +1,93 @@
-import { Check, Minus } from "lucide-react";
-import { SectionHeading } from "./SectionHeading";
+import { useState } from "react";
+import { BenefitVisual } from "./BenefitVisual";
+import { Reveal } from "./Reveal";
+import { Cta } from "./Cta";
 
-const without = [
-  "Fragmented financial information",
-  "Product-first conversations",
-  "Important gaps can go unnoticed",
-  "Advice may feel generic",
-  "Clients struggle to see the full picture",
-  "Decisions are easier to delay",
+const primary = [
+  {
+    title: "Make more money",
+    body: "One clearer picture. Bigger, more relevant cases.",
+    visual: "chart" as const,
+  },
+  {
+    title: "See what's missing",
+    body: "Overlooked gaps become impossible to ignore.",
+    visual: "spark" as const,
+  },
+  {
+    title: "Skip the guesswork",
+    body: "Questions guided by real priorities, not scripts.",
+    visual: "rings" as const,
+  },
+  {
+    title: "Close with clarity",
+    body: "Clients understand the why — and act on it.",
+    visual: "shield" as const,
+  },
 ];
 
-const withScoring = [
-  "One clearer financial picture",
-  "Questions guided by actual priorities",
-  "Overlooked needs become visible",
-  "Recommendations feel more relevant",
-  "Clients understand the “why”",
-  "A clearer next step emerges",
+const more = [
+  { title: "No more product pitch", body: "Start with the picture, not the policy." },
+  { title: "Faster decisions", body: "A clear next step is easier to say yes to." },
+  { title: "Real relevance", body: "Recommendations that match the life in front of you." },
+  { title: "Trust from minute one", body: "Clients feel understood, not processed." },
 ];
-
-const outcomes = ["Clarity", "Confidence", "Context", "Better questions", "A visible next step"];
 
 export function WhyClientsCare() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section id="why-clients" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
-        <SectionHeading
-          eyebrow="Why clients care"
-          title="Clients don’t want another product pitch. They want a clearer picture."
-          subtitle="Financial Scoring changes the conversation from “What can I sell?” to “What does this person actually need?”"
-        />
+        <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
+          Why clients care
+        </p>
+        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
+          They want <span className="text-gradient-mint">answers.</span>
+        </h2>
+        <p className="mx-auto mt-4 max-w-md text-center text-base text-muted-foreground sm:text-lg">
+          Not another pitch.
+        </p>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
-          <div className="rounded-3xl border border-border/50 bg-surface/40 p-6 opacity-80">
-            <h3 className="font-display text-lg font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-              Without a financial score
-            </h3>
-            <ul className="mt-5 space-y-3">
-              {without.map((item) => (
-                <li key={item} className="flex gap-3 text-sm text-muted-foreground">
-                  <Minus className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-3xl border border-mint/40 bg-card p-6 glow-mint">
-            <h3 className="font-display text-lg font-semibold uppercase tracking-[0.14em] text-mint">
-              With Financial Scoring
-            </h3>
-            <ul className="mt-5 space-y-3">
-              {withScoring.map((item) => (
-                <li key={item} className="flex gap-3 text-sm text-foreground/90">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0 text-mint" aria-hidden="true" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+          {primary.map((c, i) => (
+            <Reveal key={c.title} delay={i * 90}>
+              <article className="h-full rounded-3xl card-surface p-5">
+                <BenefitVisual variant={c.visual} />
+                <h3 className="mt-5 font-display text-2xl font-bold uppercase leading-none sm:text-3xl">
+                  {c.title}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
+              </article>
+            </Reveal>
+          ))}
         </div>
 
-        <ul className="mt-10 flex flex-wrap justify-center gap-3">
-          {outcomes.map((o) => (
-            <li
-              key={o}
-              className="rounded-full border border-border bg-surface/60 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-foreground/85"
-            >
-              {o}
-            </li>
-          ))}
-        </ul>
+        {open ? (
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {more.map((c, i) => (
+              <Reveal key={c.title} delay={i * 70}>
+                <article className="h-full rounded-3xl card-surface p-5">
+                  <h3 className="font-display text-xl font-bold uppercase sm:text-2xl">
+                    {c.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        ) : null}
 
-        <p className="mx-auto mt-12 max-w-3xl text-center font-display text-xl font-semibold leading-snug sm:text-3xl">
-          Clients want to understand the bigger picture—
-          <span className="text-gradient-mint">not just hear about another product.</span>
-        </p>
+        <div className="mt-8 flex justify-center">
+          <Cta
+            variant="outline"
+            className="w-full sm:w-auto"
+            onClick={() => setOpen((v) => !v)}
+            ariaLabel={open ? "Show fewer benefits" : "See all benefits"}
+          >
+            {open ? "Show less" : "See all benefits"}
+          </Cta>
+        </div>
       </div>
     </section>
   );

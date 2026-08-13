@@ -11,7 +11,11 @@ export function Nav() {
         <a href="#top" className="min-w-0 rounded-md" aria-label="Financial Scoring home">
           <Logo className="h-7 sm:h-9" />
         </a>
-        <Cta href="#experience" size="md" className="shrink-0 whitespace-nowrap px-4 text-xs">
+        <Cta
+          href="#experience"
+          size="md"
+          className="hidden shrink-0 whitespace-nowrap px-4 text-xs sm:inline-flex"
+        >
           Experience Scoring
         </Cta>
       </nav>

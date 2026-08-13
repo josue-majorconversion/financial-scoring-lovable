@@ -2,13 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
 import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
-import { WhatItDoes } from "@/components/landing/WhatItDoes";
 import { ExperienceScoring } from "@/components/landing/ExperienceScoring";
 import { WhyClientsCare } from "@/components/landing/WhyClientsCare";
 import { WhyAgentsCare } from "@/components/landing/WhyAgentsCare";
 import { RippleEffect } from "@/components/landing/RippleEffect";
 import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
-import { LearnMore } from "@/components/landing/LearnMore";
 import { WhatsNext } from "@/components/landing/WhatsNext";
 import { FinalCta } from "@/components/landing/FinalCta";
 import { Footer } from "@/components/landing/Footer";
@@ -42,13 +40,11 @@ function Index() {
       <Nav />
       <main className="min-h-screen bg-background pb-20 sm:pb-0">
         <Hero />
-        <WhatItDoes />
         <ExperienceScoring />
         <WhyClientsCare />
         <WhyAgentsCare />
         <RippleEffect />
         <VideoTestimonials />
-        <LearnMore />
         <WhatsNext />
         <FinalCta />
         <Footer />
