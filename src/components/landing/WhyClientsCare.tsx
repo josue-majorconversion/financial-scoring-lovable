@@ -7,7 +7,7 @@ const primary = [
   {
     title: "Make more money",
     body: "One clearer picture. Bigger, more relevant cases.",
-    visual: "chart" as const,
+    visual: "money" as const,
   },
   {
     title: "See what's missing",
