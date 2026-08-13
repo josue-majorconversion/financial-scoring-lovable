@@ -8,7 +8,7 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
   return (
     <div
       aria-hidden="true"
-      className={`relative grid h-28 w-full place-items-center overflow-hidden rounded-2xl border border-border bg-surface-2/60 ${className}`}
+      className={`relative grid h-36 w-full place-items-center overflow-hidden rounded-2xl border border-border bg-surface-2/60 ${className}`}
     >
       <div className="absolute inset-0 grid-glow opacity-30" />
       {variant === "chart" ? (
@@ -20,6 +20,16 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
               style={{ height: `${h}%`, animationDelay: `${i * 140}ms` }}
             />
           ))}
+        </div>
+      ) : null}
+
+      {variant === "money" ? (
+        <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
+          <DollarSign
+            className="text-mint animate-pulse-glow"
+            size={64}
+            strokeWidth={2.5}
+          />
         </div>
       ) : null}
 
