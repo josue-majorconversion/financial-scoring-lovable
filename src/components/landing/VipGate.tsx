@@ -41,8 +41,8 @@ export function VipGate() {
     const root = document.getElementById("site-root");
     if (!root) return;
     const active = open && !closing;
-    root.style.filter = active ? "blur(10px) brightness(0.35)" : "";
-    root.style.transition = "filter 500ms ease";
+    root.style.filter = active ? "blur(12px)" : "";
+    root.style.transition = active ? "filter 500ms ease" : "";
     root.setAttribute("aria-hidden", active ? "true" : "false");
     root.style.pointerEvents = active ? "none" : "";
   }, [open, closing]);
