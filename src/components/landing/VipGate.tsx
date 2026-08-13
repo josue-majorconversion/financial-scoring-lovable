@@ -93,7 +93,7 @@ export function VipGate() {
             <img
               src={lockup.url}
               alt="Ignyte Sales Conference"
-              className="h-12 w-auto max-w-[42%] object-contain"
+              className="h-11 w-auto max-w-[46%] object-contain"
             />
           </div>
 
