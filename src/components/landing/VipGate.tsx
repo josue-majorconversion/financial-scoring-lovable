@@ -10,7 +10,7 @@ export function resetVipGate() {
 }
 
 if (typeof window !== "undefined" && import.meta.env.DEV) {
-  (window as unknown as Record<string, unknown>).resetVipGate = resetVipGate;
+  (window as unknown as Record<string, unknown>)["resetVipGate"] = resetVipGate;
 }
 
 export function VipGate() {
