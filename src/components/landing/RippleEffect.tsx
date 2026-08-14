@@ -2,22 +2,22 @@ import { Reveal } from "./Reveal";
 
 const levels = [
   {
-    label: "Level 1",
+    label: "01",
     title: "You know the client's full truth",
     body: "Every need and priority is on the table before you speak.",
   },
   {
-    label: "Level 2",
+    label: "02",
     title: "New agents close sooner",
     body: "They follow the score instead of guessing their way through calls.",
   },
   {
-    label: "Level 3",
+    label: "03",
     title: "Your agents stop quitting",
     body: "Agents who make money and see progress stay on the team.",
   },
   {
-    label: "Level 4",
+    label: "04",
     title: "Your agency keeps growing",
     body: "More producers staying longer means more revenue every year.",
   },
