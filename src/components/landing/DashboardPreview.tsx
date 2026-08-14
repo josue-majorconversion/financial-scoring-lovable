@@ -8,14 +8,9 @@ export function DashboardPreview() {
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Inside the platform"
-          title={
-            <span className="block">
-              <span className="block">Here&rsquo;s what you&rsquo;ll see</span>
-              <span className="block text-mint">in your dashboard</span>
-            </span>
-          }
+          title="Here&rsquo;s what you&rsquo;ll see in your dashboard"
           subtitle="A quick look at scores, insights, and next steps — all in one place."
-          className="text-3xl sm:text-5xl"
+          className="text-2xl sm:text-4xl"
         />
 
         <div className="mt-10 rounded-3xl border border-mint/40 bg-card p-1.5 glow-mint sm:p-3">
