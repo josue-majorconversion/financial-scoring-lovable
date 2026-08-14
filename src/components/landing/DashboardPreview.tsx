@@ -15,8 +15,9 @@ export function DashboardPreview() {
             </span>
           }
           subtitle="A quick look at scores, insights, and next steps — all in one place."
-          className="text-2xl sm:text-4xl"
+          className="text-[21px] sm:text-[33px]"
         />
+
 
         <div className="mt-10 rounded-3xl border border-mint/40 bg-card p-1.5 glow-mint sm:p-3">
           <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-surface-2">
