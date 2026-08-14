@@ -3,9 +3,9 @@ import { Users, Mail, Gauge } from "lucide-react";
 import { Cta } from "./Cta";
 
 const steps = [
-  { icon: Users, title: "Join the community" },
-  { icon: Mail, title: "Watch for the training email" },
-  { icon: Gauge, title: "Try Financial Scoring" },
+  { icon: Users, title: "Join the Skool community" },
+  { icon: Mail, title: "Access your free account via email" },
+  { icon: Gauge, title: "Send out to clients" },
 ];
 
 export function SkoolButton({
