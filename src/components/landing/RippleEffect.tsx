@@ -39,7 +39,7 @@ export function RippleEffect() {
           Certainty <span className="text-gradient-mint">compounds.</span>
         </h2>
 
-        <ol className="relative mt-12 space-y-8 pl-6 sm:space-y-12 sm:pl-10">
+        <ol className="relative mt-16 space-y-12 pl-6 sm:mt-20 sm:space-y-20 sm:pl-10">
           <span
             aria-hidden="true"
             className="absolute left-1 top-2 h-[calc(100%-1rem)] w-px bg-gradient-to-b from-mint via-mint/40 to-transparent sm:left-3"
