@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
 import { ExperienceScoring } from "@/components/landing/ExperienceScoring";
+import { DashboardPreview } from "@/components/landing/DashboardPreview";
 import { WhyClientsCare } from "@/components/landing/WhyClientsCare";
 import { WhyAgentsCare } from "@/components/landing/WhyAgentsCare";
 import { RippleEffect } from "@/components/landing/RippleEffect";
@@ -43,6 +44,7 @@ function Index() {
       <main className="min-h-screen bg-background">
         <Hero />
         <ExperienceScoring />
+        <DashboardPreview />
         <WhyClientsCare />
         <WhyAgentsCare />
         <RippleEffect />
