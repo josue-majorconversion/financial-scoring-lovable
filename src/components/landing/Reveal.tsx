@@ -5,6 +5,8 @@ interface RevealProps {
   className?: string;
   delay?: number;
   animation?: "slide-in-right" | "rise-in" | "ripple-slide";
+  rootMargin?: string;
+  threshold?: number;
 }
 
 export function Reveal({
@@ -12,6 +14,8 @@ export function Reveal({
   className = "",
   delay = 0,
   animation = "rise-in",
+  rootMargin = "0px",
+  threshold = 0.15,
 }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
@@ -28,11 +32,11 @@ export function Reveal({
           }
         });
       },
-      { threshold: 0.15 },
+      { threshold, rootMargin },
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [rootMargin, threshold]);
 
   return (
     <div
@@ -44,3 +48,4 @@ export function Reveal({
     </div>
   );
 }
+
