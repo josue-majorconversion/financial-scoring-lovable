@@ -6,10 +6,12 @@ import {
   PhoneOff,
   Crown,
   HeartHandshake,
+  Briefcase,
 } from "lucide-react";
 
 type Variant =
   | "chart"
+  | "bigger-case"
   | "puzzle"
   | "question"
   | "clarity"
