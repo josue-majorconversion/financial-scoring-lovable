@@ -1,5 +1,4 @@
 import { Search, Target, Users, TrendingUp } from "lucide-react";
-import { Reveal } from "./Reveal";
 
 const levels = [
   {
@@ -44,25 +43,23 @@ export function RippleEffect() {
             aria-hidden="true"
             className="absolute left-1 top-2 h-[calc(100%-1rem)] w-px bg-gradient-to-b from-mint via-mint/40 to-transparent sm:left-3"
           />
-          {levels.map((l, i) => (
+          {levels.map((l) => (
             <li key={l.title} className="relative">
               <span
                 aria-hidden="true"
                 className="absolute -left-[1.35rem] top-8 h-2.5 w-2.5 rounded-full bg-mint shadow-[0_0_0_6px_rgba(0,199,212,0.18)] sm:-left-[2.1rem]"
               />
-              <Reveal animation="ripple-slide" delay={i * 160} rootMargin="0px 0px -45% 0px" threshold={0.25}>
-                <div className="rounded-2xl card-surface p-6">
-                  <div className="flex items-center gap-4">
-                    <div className="relative grid h-20 w-20 shrink-0 place-items-center rounded-2xl border border-mint/30 bg-mint/5 sm:h-24 sm:w-24">
-                      <l.icon size={40} strokeWidth={2} className="text-mint animate-pulse-glow sm:h-11 sm:w-11" />
-                    </div>
-                    <h3 className="font-display text-[1.4rem] font-bold uppercase leading-tight sm:text-[1.9rem]">
-                      {l.title}
-                    </h3>
+              <div className="rounded-2xl card-surface p-6">
+                <div className="flex items-center gap-4">
+                  <div className="relative grid h-20 w-20 shrink-0 place-items-center rounded-2xl border border-mint/30 bg-mint/5 sm:h-24 sm:w-24">
+                    <l.icon size={40} strokeWidth={2} className="text-mint sm:h-11 sm:w-11" />
                   </div>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
+                  <h3 className="font-display text-[1.4rem] font-bold uppercase leading-tight sm:text-[1.9rem]">
+                    {l.title}
+                  </h3>
                 </div>
-              </Reveal>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
+              </div>
             </li>
           ))}
 
