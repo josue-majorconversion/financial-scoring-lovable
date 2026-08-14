@@ -26,11 +26,12 @@ export function Hero() {
 
           <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
             <span className="block">Leads are</span>
-            <span className="block text-[1.7em] text-[#ff3b30]">dead.</span>
+            <span className="block text-[1.7em] text-[#ff3b30]">dead</span>
           </h1>
 
-          <p className="font-display text-2xl font-medium uppercase tracking-[0.04em] text-foreground/90 sm:text-3xl">
-            STOP BUYING LEADS. START BUYING CERTAINTY.
+          <p className="font-display font-medium uppercase tracking-[0.04em] text-foreground/90">
+            <span className="block text-2xl sm:text-3xl">Stop buying leads.</span>
+            <span className="block text-3xl sm:text-4xl">Start buying certainty.</span>
           </p>
 
           <p className="max-w-2xl text-base font-semibold leading-relaxed text-foreground/80 sm:text-lg">
