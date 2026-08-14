@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent } from "react";
 import lockup from "@/assets/ignyte-lockup.png.asset.json";
-import mark from "@/assets/ignyte-mark.png.asset.json";
+import fsLogo from "@/assets/financial-scoring-logo.png.asset.json";
 
 const STORAGE_KEY = "financial_scoring_vip_test_access";
 
