@@ -11,7 +11,7 @@ export function DashboardPreview() {
           title={
             <span className="block">
               <span className="block">Here&rsquo;s what you&rsquo;ll see</span>
-              <span className="block text-cyan">in your Dashboard</span>
+              <span className="block text-mint">in your dashboard</span>
             </span>
           }
           subtitle="A quick look at scores, insights, and next steps — all in one place."
