@@ -81,12 +81,11 @@ export function VipGate() {
         <div className="card-surface glow-mint w-full rounded-3xl p-5 sm:p-7">
           {/* Logo lockup */}
           <div className="flex items-center justify-center gap-2">
-            <span className="inline-flex shrink-0 flex-col items-center gap-1">
-              <img src={mark.url} alt="" aria-hidden="true" className="h-7 w-auto" />
-              <span className="font-display text-[0.55rem] font-semibold uppercase leading-tight tracking-[0.1em] text-foreground">
-                Financial<span className="text-mint">Scoring</span>
-              </span>
-            </span>
+            <img
+              src={fsLogo.url}
+              alt="Financial Scoring"
+              className="h-9 w-auto max-w-[46%] shrink-0 object-contain"
+            />
             <span className="shrink-0 font-display text-base text-mint" aria-hidden="true">
               ×
             </span>
