@@ -41,9 +41,8 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
   return (
     <div
       aria-hidden="true"
-      className={`relative grid h-36 w-full place-items-center overflow-hidden rounded-2xl border border-border bg-surface-2/60 ${className}`}
+      className={`relative grid h-36 w-full place-items-center ${className}`}
     >
-      <div className="absolute inset-0 grid-glow opacity-30" />
 
       {variant === "chart" ? (
         <div className="relative flex h-24 items-end gap-3">
