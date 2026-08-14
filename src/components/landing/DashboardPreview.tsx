@@ -9,13 +9,12 @@ export function DashboardPreview() {
         <SectionHeading
           eyebrow="Inside the platform"
           title={
-            <span className="block">
-              <span className="block">Here&rsquo;s what you&rsquo;ll see</span>
-              <span className="block text-mint">in your dashboard</span>
+            <span className="whitespace-nowrap">
+              Here&rsquo;s what you&rsquo;ll see <span className="text-mint">in your dashboard</span>
             </span>
           }
           subtitle="A quick look at scores, insights, and next steps — all in one place."
-          className="text-3xl sm:text-5xl"
+          className="text-2xl sm:text-4xl"
         />
 
         <div className="mt-10 rounded-3xl border border-mint/40 bg-card p-1.5 glow-mint sm:p-3">
