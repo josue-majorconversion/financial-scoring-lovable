@@ -16,7 +16,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 top-24 -z-10 h-px bg-gradient-to-r from-transparent via-mint/60 to-transparent animate-scan-down"
       />
 
-      <div className="mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-28 sm:px-8">
+      <div className="mx-auto flex min-h-[90svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-12 sm:px-8">
         <div className="flex flex-col items-center gap-7 text-center">
           
 
