@@ -40,10 +40,10 @@ export function WhyClientsCare() {
     <section id="why-clients" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          Why clients care
+          They want Answers
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          They want <span className="text-gradient-mint">answers.</span>
+          Why Clients Care
         </h2>
         <p className="mx-auto mt-4 max-w-md text-center text-base text-muted-foreground sm:text-lg">
           Not another pitch.
