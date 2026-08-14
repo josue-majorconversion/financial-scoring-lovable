@@ -45,7 +45,7 @@ export function RippleEffect() {
                 aria-hidden="true"
                 className="absolute -left-[1.35rem] top-8 h-2.5 w-2.5 rounded-full bg-mint shadow-[0_0_0_6px_rgba(0,199,212,0.18)] sm:-left-[2.1rem]"
               />
-              <Reveal animation="ripple-slide" delay={i * 120} rootMargin="0px 0px -15% 0px" threshold={0.2}>
+              <Reveal animation="ripple-slide" delay={i * 160} rootMargin="0px 0px -45% 0px" threshold={0.25}>
                 <div className="rounded-2xl card-surface p-6">
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
                     {l.label}
