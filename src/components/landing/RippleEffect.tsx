@@ -1,5 +1,4 @@
 import { Search, Target, Users, TrendingUp } from "lucide-react";
-import { Reveal } from "./Reveal";
 
 const levels = [
   {
