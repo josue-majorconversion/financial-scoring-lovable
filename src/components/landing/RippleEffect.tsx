@@ -52,9 +52,12 @@ export function RippleEffect() {
               />
               <Reveal animation="ripple-slide" delay={i * 160} rootMargin="0px 0px -45% 0px" threshold={0.25}>
                 <div className="rounded-2xl card-surface p-6">
-                  <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
-                    {l.label}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <l.icon size={16} strokeWidth={2.5} className="text-mint" />
+                    <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
+                      {l.label}
+                    </p>
+                  </div>
                   <h3 className="mt-2 font-display text-[1.75rem] font-bold uppercase leading-tight sm:text-4xl">
                     {l.title}
                   </h3>
