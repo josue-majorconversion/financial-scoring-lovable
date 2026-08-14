@@ -12,17 +12,17 @@ const primary = [
   {
     title: "See what's missing",
     body: "Overlooked gaps become impossible to ignore.",
-    visual: "spark" as const,
+    visual: "puzzle" as const,
   },
   {
     title: "Skip the guesswork",
     body: "Questions guided by real priorities, not scripts.",
-    visual: "rings" as const,
+    visual: "question" as const,
   },
   {
     title: "Close with clarity",
     body: "Clients understand the why — and act on it.",
-    visual: "shield" as const,
+    visual: "clarity" as const,
   },
 ];
 
