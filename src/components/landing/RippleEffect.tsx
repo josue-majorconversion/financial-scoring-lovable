@@ -1,23 +1,28 @@
+import { Search, Target, Users, TrendingUp } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const levels = [
   {
     label: "01",
+    icon: Search,
     title: "You know the client's full truth",
     body: "Every need and priority is on the table before you speak.",
   },
   {
     label: "02",
+    icon: Target,
     title: "New agents close sooner",
     body: "They follow the score instead of guessing their way through calls.",
   },
   {
     label: "03",
+    icon: Users,
     title: "Your agents stop quitting",
     body: "Agents who make money and see progress stay on the team.",
   },
   {
     label: "04",
+    icon: TrendingUp,
     title: "Your agency keeps growing",
     body: "More producers staying longer means more revenue every year.",
   },
@@ -47,9 +52,12 @@ export function RippleEffect() {
               />
               <Reveal animation="ripple-slide" delay={i * 160} rootMargin="0px 0px -45% 0px" threshold={0.25}>
                 <div className="rounded-2xl card-surface p-6">
-                  <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
-                    {l.label}
-                  </p>
+                  <div className="flex items-center gap-2">
+                    <l.icon size={16} strokeWidth={2.5} className="text-mint" />
+                    <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
+                      {l.label}
+                    </p>
+                  </div>
                   <h3 className="mt-2 font-display text-[1.75rem] font-bold uppercase leading-tight sm:text-4xl">
                     {l.title}
                   </h3>
