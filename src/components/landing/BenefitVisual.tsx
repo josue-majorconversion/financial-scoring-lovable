@@ -1,8 +1,40 @@
-import { DollarSign } from "lucide-react";
+import {
+  DollarSign,
+  PuzzleIcon,
+  HelpCircle,
+  Eye,
+  PhoneOff,
+  Crown,
+  HeartHandshake,
+} from "lucide-react";
 
-type Variant = "chart" | "rings" | "shield" | "calls" | "spark" | "handshake" | "money";
+type Variant =
+  | "chart"
+  | "puzzle"
+  | "question"
+  | "clarity"
+  | "no-calls"
+  | "crown"
+  | "loyalty"
+  | "money";
 
 const bars = [34, 52, 70, 92];
+
+function IconFrame({
+  children,
+  pulse = true,
+}: {
+  children: React.ReactNode;
+  pulse?: boolean;
+}) {
+  return (
+    <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
+      <span className={pulse ? "text-mint animate-pulse-glow" : "text-mint animate-float-slow"}>
+        {children}
+      </span>
+    </div>
+  );
+}
 
 export function BenefitVisual({ variant, className = "" }: { variant: Variant; className?: string }) {
   return (
@@ -11,6 +43,7 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
       className={`relative grid h-36 w-full place-items-center overflow-hidden rounded-2xl border border-border bg-surface-2/60 ${className}`}
     >
       <div className="absolute inset-0 grid-glow opacity-30" />
+
       {variant === "chart" ? (
         <div className="relative flex h-24 items-end gap-3">
           {bars.map((h, i) => (
@@ -24,83 +57,71 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
       ) : null}
 
       {variant === "money" ? (
+        <IconFrame>
+          <DollarSign size={64} strokeWidth={2.5} />
+        </IconFrame>
+      ) : null}
+
+      {/* See what's missing — a grid with one missing piece */}
+      {variant === "puzzle" ? (
         <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
-          <DollarSign
-            className="text-mint animate-pulse-glow"
-            size={64}
-            strokeWidth={2.5}
-          />
+          <div className="grid grid-cols-2 gap-1.5">
+            {[0, 1, 2, 3].map((i) =>
+              i === 3 ? (
+                <span
+                  key={i}
+                  className="grid h-9 w-9 place-items-center rounded-md border-2 border-dashed border-mint animate-pulse-glow"
+                >
+                  <PuzzleIcon className="h-5 w-5 text-mint" strokeWidth={2.5} />
+                </span>
+              ) : (
+                <span key={i} className="h-9 w-9 rounded-md bg-mint/25" />
+              ),
+            )}
+          </div>
         </div>
       ) : null}
 
-      {variant === "spark" ? (
-        <svg viewBox="0 0 200 80" className="relative h-20 w-52">
-          <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="var(--mint-soft)" />
-            </marker>
-          </defs>
-          <polyline
-            points="4,70 44,54 84,58 124,30 164,34 196,8"
-            fill="none"
-            stroke="var(--mint-soft)"
-            strokeWidth="5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            markerEnd="url(#arrowhead)"
-            className="animate-draw-line-repeat"
-          />
-          <circle cx="196" cy="8" r="7" fill="var(--mint-soft)" className="animate-pulse-glow" />
-        </svg>
+      {/* Skip the guesswork — question mark that resolves */}
+      {variant === "question" ? (
+        <IconFrame>
+          <HelpCircle size={64} strokeWidth={2.5} />
+        </IconFrame>
       ) : null}
 
-      {variant === "rings" ? (
-        <div className="relative grid h-20 w-20 place-items-center">
-          {[0, 1, 2].map((i) => (
+      {/* Close with clarity — an eye / focus */}
+      {variant === "clarity" ? (
+        <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
+          {[0, 1].map((i) => (
             <span
               key={i}
-              className="absolute h-16 w-16 rounded-full border border-mint/60 animate-ring-out"
-              style={{ animationDelay: `${i * 900}ms` }}
+              className="absolute h-20 w-20 rounded-full border border-mint/50 animate-ring-out"
+              style={{ animationDelay: `${i * 1100}ms` }}
             />
           ))}
-          <span className="relative h-6 w-6 rounded-full bg-gradient-mint" />
+          <Eye className="relative text-mint" size={60} strokeWidth={2.2} />
         </div>
       ) : null}
 
-      {variant === "shield" ? (
-        <div className="relative flex items-end gap-1.5">
-          {[0, 1, 2, 3, 4, 5].map((i) => (
-            <span
-              key={i}
-              className="h-10 w-2 rounded-full bg-mint/25 animate-bar-rise"
-              style={{
-                height: `${28 + ((i * 13) % 34)}px`,
-                animationDelay: `${i * 110}ms`,
-                backgroundColor: i > 2 ? "var(--mint)" : undefined,
-              }}
-            />
-          ))}
-        </div>
+      {/* Fewer dead calls — phone off with dropped call bars */}
+      {variant === "no-calls" ? (
+        <IconFrame pulse={false}>
+          <PhoneOff size={60} strokeWidth={2.4} />
+        </IconFrame>
       ) : null}
 
-      {variant === "calls" ? (
-        <div className="relative flex items-center gap-2">
-          {[0, 1, 2, 3, 4].map((i) => (
-            <span
-              key={i}
-              className={`h-3 w-3 rounded-full ${i < 2 ? "bg-mint" : "bg-border"}`}
-              style={i < 2 ? { boxShadow: "0 0 14px var(--mint)" } : undefined}
-            />
-          ))}
-        </div>
+      {/* Own the room — crown */}
+      {variant === "crown" ? (
+        <IconFrame>
+          <Crown size={62} strokeWidth={2.3} />
+        </IconFrame>
       ) : null}
 
-      {variant === "handshake" ? (
-        <div className="relative flex items-center gap-3">
-          <span className="h-10 w-10 rounded-full border border-mint/50 bg-mint/10" />
-          <span className="h-px w-10 bg-gradient-to-r from-mint to-mint-soft" />
-          <span className="h-10 w-10 rounded-full bg-gradient-mint animate-pulse-glow" />
-        </div>
+      {/* Clients that stay — handshake / heart */}
+      {variant === "loyalty" ? (
+        <IconFrame pulse={false}>
+          <HeartHandshake size={62} strokeWidth={2.2} />
+        </IconFrame>
       ) : null}
     </div>
   );
