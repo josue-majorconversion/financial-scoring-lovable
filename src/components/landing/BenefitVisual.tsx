@@ -58,9 +58,9 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
         </div>
       ) : null}
 
-      {/* Bigger cases — a briefcase growing with stacked value bars */}
+      {/* Bigger cases — bars rising inside a square frame */}
       {variant === "bigger-case" ? (
-        <div className="relative flex items-end gap-3">
+        <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
           <div className="flex h-20 items-end gap-2">
             {[40, 65, 100].map((h, i) => (
               <span
@@ -70,11 +70,9 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
               />
             ))}
           </div>
-          <span className="text-mint animate-pulse-glow">
-            <Briefcase size={58} strokeWidth={2.3} />
-          </span>
         </div>
       ) : null}
+
 
       {variant === "money" ? (
         <IconFrame>
