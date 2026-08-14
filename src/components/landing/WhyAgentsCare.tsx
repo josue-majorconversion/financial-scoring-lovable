@@ -12,17 +12,17 @@ const primary = [
   {
     title: "Fewer dead calls",
     body: "Spend your day where the money actually is.",
-    visual: "calls" as const,
+    visual: "no-calls" as const,
   },
   {
     title: "Own the room",
     body: "Walk in already knowing what matters.",
-    visual: "rings" as const,
+    visual: "crown" as const,
   },
   {
     title: "Clients that stay",
     body: "Understood clients buy more and leave less.",
-    visual: "handshake" as const,
+    visual: "loyalty" as const,
   },
 ];
 
