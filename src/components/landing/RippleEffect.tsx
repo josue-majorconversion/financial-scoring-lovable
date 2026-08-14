@@ -50,7 +50,7 @@ export function RippleEffect() {
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
                     {l.label}
                   </p>
-                  <h3 className="mt-2 font-display text-2xl font-bold uppercase sm:text-3xl">
+                  <h3 className="mt-2 font-display text-[1.75rem] font-bold uppercase leading-tight sm:text-4xl">
                     {l.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
