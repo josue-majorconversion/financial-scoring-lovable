@@ -15,8 +15,9 @@ export function DashboardPreview() {
             </span>
           }
           subtitle="A quick look at scores, insights, and next steps — all in one place."
-          className="text-[23.5px] sm:text-[35.5px]"
+          className="text-[28px] sm:text-[35.5px]"
         />
+
 
 
 
