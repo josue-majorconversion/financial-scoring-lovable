@@ -58,6 +58,24 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
         </div>
       ) : null}
 
+      {/* Bigger cases — a briefcase growing with stacked value bars */}
+      {variant === "bigger-case" ? (
+        <div className="relative flex items-end gap-3">
+          <div className="flex h-20 items-end gap-2">
+            {[40, 65, 100].map((h, i) => (
+              <span
+                key={h}
+                className="w-5 rounded-t-md bg-gradient-mint animate-bar-rise"
+                style={{ height: `${h}%`, animationDelay: `${i * 180}ms` }}
+              />
+            ))}
+          </div>
+          <span className="text-mint animate-pulse-glow">
+            <Briefcase size={58} strokeWidth={2.3} />
+          </span>
+        </div>
+      ) : null}
+
       {variant === "money" ? (
         <IconFrame>
           <DollarSign size={64} strokeWidth={2.5} />
