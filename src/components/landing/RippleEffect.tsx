@@ -3,23 +3,23 @@ import { Reveal } from "./Reveal";
 const levels = [
   {
     label: "Level 1",
-    title: "Better client insight",
-    body: "Agents enter every conversation with real context.",
+    title: "You know the client's full truth",
+    body: "Every need and priority is on the table before you speak.",
   },
   {
     label: "Level 2",
-    title: "Faster agent development",
-    body: "A repeatable framework new agents can actually follow.",
+    title: "New agents close sooner",
+    body: "They follow the score instead of guessing their way through calls.",
   },
   {
     label: "Level 3",
-    title: "Stronger retention",
-    body: "Confidence and progress give agents reasons to stay.",
+    title: "Your agents stop quitting",
+    body: "Agents who make money and see progress stay on the team.",
   },
   {
     label: "Level 4",
-    title: "A healthier agency",
-    body: "Better retention builds a bigger, more durable organization.",
+    title: "Your agency keeps growing",
+    body: "More producers staying longer means more revenue every year.",
   },
 ];
 
@@ -45,7 +45,7 @@ export function RippleEffect() {
                 aria-hidden="true"
                 className="absolute -left-[1.35rem] top-8 h-2.5 w-2.5 rounded-full bg-mint shadow-[0_0_0_6px_rgba(0,199,212,0.18)] sm:-left-[2.1rem]"
               />
-              <Reveal animation="ripple-slide" delay={i * 120}>
+              <Reveal animation="ripple-slide" delay={i * 220}>
                 <div className="rounded-2xl card-surface p-6">
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
                     {l.label}

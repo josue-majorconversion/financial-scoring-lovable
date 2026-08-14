@@ -52,7 +52,7 @@ export function WhyClientsCare() {
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {primary.map((c, i) => (
             <Reveal key={c.title} delay={i * 90}>
-              <article className="h-full rounded-3xl card-surface p-5">
+              <article className="h-full rounded-3xl card-surface p-5 text-center">
                 <BenefitVisual variant={c.visual} />
                 <h3 className="mt-5 font-display text-2xl font-bold uppercase leading-none sm:text-3xl">
                   {c.title}
@@ -67,7 +67,7 @@ export function WhyClientsCare() {
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             {more.map((c, i) => (
               <Reveal key={c.title} delay={i * 70}>
-                <article className="h-full rounded-3xl card-surface p-5">
+                <article className="h-full rounded-3xl card-surface p-5 text-center">
                   <h3 className="font-display text-xl font-bold uppercase sm:text-2xl">
                     {c.title}
                   </h3>
