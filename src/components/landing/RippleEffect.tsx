@@ -34,7 +34,7 @@ export function RippleEffect() {
           Certainty <span className="text-gradient-mint">compounds.</span>
         </h2>
 
-        <ol className="relative mt-12 space-y-4 pl-6 sm:pl-10">
+        <ol className="relative mt-12 space-y-6 pl-6 sm:space-y-8 sm:pl-10">
           <span
             aria-hidden="true"
             className="absolute left-1 top-2 h-[calc(100%-1rem)] w-px bg-gradient-to-b from-mint via-mint/40 to-transparent sm:left-3"
@@ -45,12 +45,12 @@ export function RippleEffect() {
                 aria-hidden="true"
                 className="absolute -left-[1.35rem] top-8 h-2.5 w-2.5 rounded-full bg-mint shadow-[0_0_0_6px_rgba(0,199,212,0.18)] sm:-left-[2.1rem]"
               />
-              <Reveal animation="ripple-slide" delay={i * 120} rootMargin="0px 0px -15% 0px" threshold={0.2}>
+              <Reveal animation="ripple-slide" delay={i * 160} rootMargin="0px 0px -45% 0px" threshold={0.25}>
                 <div className="rounded-2xl card-surface p-6">
                   <p className="font-display text-xs font-semibold uppercase tracking-[0.26em] text-mint">
                     {l.label}
                   </p>
-                  <h3 className="mt-2 font-display text-2xl font-bold uppercase sm:text-3xl">
+                  <h3 className="mt-2 font-display text-[1.75rem] font-bold uppercase leading-tight sm:text-4xl">
                     {l.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
