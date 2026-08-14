@@ -36,9 +36,6 @@ export function DashboardPreview() {
           </div>
         </div>
 
-        <p className="mt-4 text-center text-sm text-muted-foreground">
-          Full walkthrough video coming soon.
-        </p>
       </div>
     </section>
   );
