@@ -40,10 +40,10 @@ export function WhyAgentsCare() {
     <section className="border-y border-border/60 bg-surface/40 px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          Why agents care
+          Sell Smarter
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          Sell <span className="text-gradient-mint">smarter.</span>
+          Why Agents Care
         </h2>
         <p className="mx-auto mt-4 max-w-md text-center text-base text-muted-foreground sm:text-lg">
           Less guessing. More closing.
