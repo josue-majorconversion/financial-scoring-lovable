@@ -295,16 +295,17 @@
 @keyframes ripple-slide {
   0% {
     opacity: 0;
-    transform: translateX(140px);
+    transform: translateX(180px) scale(0.96);
   }
-  60% {
-    transform: translateX(-8px);
+  55% {
+    transform: translateX(-10px) scale(1.01);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
   }
 }
+
 
 @keyframes bar-rise {
   0% {
