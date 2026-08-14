@@ -3,23 +3,23 @@ import { Reveal } from "./Reveal";
 const levels = [
   {
     label: "Level 1",
-    title: "Better client insight",
-    body: "Agents enter every conversation with real context.",
+    title: "You know the client's full truth",
+    body: "Every need and priority is on the table before you speak.",
   },
   {
     label: "Level 2",
-    title: "Faster agent development",
-    body: "A repeatable framework new agents can actually follow.",
+    title: "New agents close sooner",
+    body: "They follow the score instead of guessing their way through calls.",
   },
   {
     label: "Level 3",
-    title: "Stronger retention",
-    body: "Confidence and progress give agents reasons to stay.",
+    title: "Your agents stop quitting",
+    body: "Agents who make money and see progress stay on the team.",
   },
   {
     label: "Level 4",
-    title: "A healthier agency",
-    body: "Better retention builds a bigger, more durable organization.",
+    title: "Your agency keeps growing",
+    body: "More producers staying longer means more revenue every year.",
   },
 ];
 
