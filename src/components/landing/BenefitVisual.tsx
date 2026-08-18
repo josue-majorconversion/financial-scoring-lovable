@@ -151,6 +151,34 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
           <HeartHandshake size={62} strokeWidth={2.2} />
         </IconFrame>
       ) : null}
+
+      {/* Stop flying blind — slashed eye */}
+      {variant === "flying-blind" ? (
+        <IconFrame>
+          <EyeOff size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Get out of the dark — lightbulb */}
+      {variant === "out-of-dark" ? (
+        <IconFrame>
+          <Lightbulb size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Don't guess about retirement — finish flag */}
+      {variant === "retirement" ? (
+        <IconFrame>
+          <Flag size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Know what a bad day could expose — cracked shield */}
+      {variant === "bad-day" ? (
+        <IconFrame>
+          <ShieldAlert size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
     </div>
   );
 }
