@@ -1,5 +1,6 @@
 import {
   DollarSign,
+  ArrowDown,
   PuzzleIcon,
   HelpCircle,
   Eye,
@@ -22,6 +23,7 @@ type Variant =
   | "crown"
   | "loyalty"
   | "money"
+  | "leaving-money"
   | "flying-blind"
   | "out-of-dark"
   | "retirement"
