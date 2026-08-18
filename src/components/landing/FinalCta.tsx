@@ -1,5 +1,3 @@
-import { toast } from "sonner";
-import { Cta } from "./Cta";
 import { SkoolButton } from "./WhatsNext";
 
 export function FinalCta() {
