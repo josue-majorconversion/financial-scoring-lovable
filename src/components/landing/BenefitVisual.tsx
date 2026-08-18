@@ -92,6 +92,20 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
         </IconFrame>
       ) : null}
 
+      {/* Stop leaving money on the table — dollar sign with downward arrow */}
+      {variant === "leaving-money" ? (
+        <IconFrame>
+          <div className="relative grid h-16 w-16 place-items-center">
+            <DollarSign className="text-mint" size={56} strokeWidth={2.5} />
+            <ArrowDown
+              className="absolute -bottom-1 -right-1 text-red-400"
+              size={26}
+              strokeWidth={3}
+            />
+          </div>
+        </IconFrame>
+      ) : null}
+
       {/* See what's missing — a grid with one missing piece */}
       {variant === "puzzle" ? (
         <div className="relative grid h-28 w-28 place-items-center rounded-2xl border border-mint/30 bg-mint/5">
