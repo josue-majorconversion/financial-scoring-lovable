@@ -1,5 +1,6 @@
 import {
   DollarSign,
+  ArrowDown,
   PuzzleIcon,
   HelpCircle,
   Eye,
@@ -22,6 +23,7 @@ type Variant =
   | "crown"
   | "loyalty"
   | "money"
+  | "leaving-money"
   | "flying-blind"
   | "out-of-dark"
   | "retirement"
@@ -87,6 +89,20 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
       {variant === "money" ? (
         <IconFrame>
           <DollarSign size={64} strokeWidth={2.5} />
+        </IconFrame>
+      ) : null}
+
+      {/* Stop leaving money on the table — dollar sign with downward arrow */}
+      {variant === "leaving-money" ? (
+        <IconFrame>
+          <div className="relative grid h-16 w-16 place-items-center">
+            <DollarSign className="text-mint" size={56} strokeWidth={2.5} />
+            <ArrowDown
+              className="absolute -bottom-1 -right-1 text-red-400"
+              size={26}
+              strokeWidth={3}
+            />
+          </div>
         </IconFrame>
       ) : null}
 

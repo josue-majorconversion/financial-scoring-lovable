@@ -5,32 +5,44 @@ import { Cta } from "./Cta";
 
 const primary = [
   {
-    title: "Bigger cases",
-    body: "See needs a single-product call always misses.",
-    visual: "bigger-case" as const,
+    title: "Stop leaving money on the table",
+    body: "Hidden needs can mean missed opportunities, smaller cases, and commissions you never knew were there.",
+    visual: "leaving-money" as const,
   },
   {
-    title: "Fewer dead calls",
-    body: "Spend your day where the money actually is.",
+    title: "Stop wasting calls on the wrong people",
+    body: "Spend less time chasing weak opportunities and more time where real financial needs exist.",
     visual: "no-calls" as const,
   },
   {
-    title: "Own the room",
-    body: "Walk in already knowing what matters.",
-    visual: "crown" as const,
+    title: "Stop losing client trust",
+    body: "A clearer process helps clients understand what you see, why it matters, and what should happen next.",
+    visual: "bad-day" as const,
   },
   {
-    title: "Clients that stay",
-    body: "Understood clients buy more and leave less.",
-    visual: "loyalty" as const,
+    title: "Stop walking in blind",
+    body: "See the client's financial priorities before you start making recommendations.",
+    visual: "flying-blind" as const,
   },
 ];
 
 const more = [
-  { title: "Sharper discovery", body: "Ask the right question first, every time." },
-  { title: "Instant credibility", body: "Explain the why behind every recommendation." },
-  { title: "Ramp up faster", body: "New agents get a repeatable framework." },
-  { title: "No cold openers", body: "Every conversation starts with context." },
+  {
+    title: "Stop missing the real problem",
+    body: "Ask questions tied to the client's full financial picture instead of guessing what matters most.",
+  },
+  {
+    title: "Don't sound like every other agent",
+    body: "Bring a structured scoring process into the conversation instead of another generic product pitch.",
+  },
+  {
+    title: "Stop letting new agents wing it",
+    body: "Give newer agents a repeatable process so they know what to ask and what to look for.",
+  },
+  {
+    title: "Stop starting every call from zero",
+    body: "Walk into the conversation with more context and a clearer idea of where the needs may be.",
+  },
 ];
 
 export function WhyAgentsCare() {
@@ -46,7 +58,7 @@ export function WhyAgentsCare() {
           Why Agents <span className="text-gradient-mint">Care</span>
         </h2>
         <p className="mx-auto mt-4 max-w-md text-center text-base text-muted-foreground sm:text-lg">
-          Less guessing. More closing.
+          Every guess can cost you a deal.
         </p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
