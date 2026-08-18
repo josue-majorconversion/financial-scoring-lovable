@@ -5,32 +5,44 @@ import { Cta } from "./Cta";
 
 const primary = [
   {
-    title: "Make more money",
-    body: "One clearer picture. Bigger, more relevant cases.",
-    visual: "money" as const,
+    title: "Stop flying blind",
+    body: "See where you really stand before making another financial move.",
+    visual: "flying-blind" as const,
   },
   {
-    title: "See what's missing",
-    body: "Overlooked gaps become impossible to ignore.",
-    visual: "puzzle" as const,
+    title: "Get out of the dark",
+    body: "Understand your score, your gaps, and the reason behind the next step.",
+    visual: "out-of-dark" as const,
   },
   {
-    title: "Skip the guesswork",
-    body: "Questions guided by real priorities, not scripts.",
-    visual: "question" as const,
+    title: "Don't guess about retirement",
+    body: "See whether what you're doing today is actually moving you toward the finish line.",
+    visual: "retirement" as const,
   },
   {
-    title: "Close with clarity",
-    body: "Clients understand the why — and act on it.",
-    visual: "clarity" as const,
+    title: "Know what a bad day could expose",
+    body: "See where protection gaps could leave your financial plan vulnerable.",
+    visual: "bad-day" as const,
   },
 ];
 
 const more = [
-  { title: "No more product pitch", body: "Start with the picture, not the policy." },
-  { title: "Faster decisions", body: "A clear next step is easier to say yes to." },
-  { title: "Real relevance", body: "Recommendations that match the life in front of you." },
-  { title: "Trust from minute one", body: "Clients feel understood, not processed." },
+  {
+    title: "Don't let taxes surprise you",
+    body: "See whether your current financial picture is built with tax efficiency in mind.",
+  },
+  {
+    title: 'Stop wondering "Am I okay?"',
+    body: "Turn a pile of accounts and policies into one clearer financial picture.",
+  },
+  {
+    title: "See what needs attention first",
+    body: "Know where the biggest gaps are before trying to fix everything at once.",
+  },
+  {
+    title: "Find the hidden gaps",
+    body: "See what may be missing across retirement, taxes, risk, and protection.",
+  },
 ];
 
 export function WhyClientsCare() {
