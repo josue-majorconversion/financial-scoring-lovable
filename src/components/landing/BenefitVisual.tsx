@@ -21,7 +21,15 @@ type Variant =
   | "no-calls"
   | "crown"
   | "loyalty"
-  | "money";
+  | "money"
+  | "flying-blind"
+  | "out-of-dark"
+  | "retirement"
+  | "bad-day"
+  | "taxes"
+  | "am-i-okay"
+  | "attention"
+  | "hidden-gaps";
 
 const bars = [34, 52, 70, 92];
 
