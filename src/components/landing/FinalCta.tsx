@@ -31,23 +31,14 @@ export function FinalCta() {
           The next era of prospecting
         </p>
         <h2 className="mt-5 font-display text-4xl font-bold uppercase leading-[0.95] sm:text-6xl">
-          Stop buying leads. <span className="text-gradient-mint">Start buying certainty.</span>
+          <span className="block">Stop buying leads.</span>
+          <span className="block text-gradient-mint">Start buying certainty.</span>
         </h2>
         <p className="mt-5 text-base text-muted-foreground sm:text-lg">
           See what changes when every conversation begins with a clearer financial picture.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Cta
-            className="w-full sm:w-auto"
-            onClick={() =>
-              toast("Primary CTA pending approval", {
-                description: "The final CTA label and destination will be added before launch.",
-              })
-            }
-          >
-            Get Started
-          </Cta>
           <SkoolButton variant="outline" className="w-full sm:w-auto" />
         </div>
 
