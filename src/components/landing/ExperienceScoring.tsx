@@ -26,12 +26,13 @@ export function ExperienceScoring() {
           </p>
 
           <div className="rounded-3xl border border-mint/40 bg-card p-1.5 glow-mint sm:p-3">
-            <div className="h-[750px] w-full overflow-hidden rounded-2xl bg-background sm:h-[700px]">
+            <div className="h-[1250px] w-full rounded-2xl bg-background sm:h-[1150px]">
               <iframe
                 src={ASSESSMENT_URL}
                 title="Financial Score Questionnaire"
                 loading="lazy"
                 className="block h-full w-full border-0"
+                scrolling="no"
               />
             </div>
           </div>
