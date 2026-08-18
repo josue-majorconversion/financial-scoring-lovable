@@ -108,19 +108,17 @@ export function VipGate() {
           </p>
 
           <form onSubmit={onSubmit} className="mt-6 space-y-4" noValidate>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div>
-                <label className={label} htmlFor="vip-first">
-                  First Name
-                </label>
-                <input id="vip-first" name="firstName" className={field} autoComplete="given-name" />
-              </div>
-              <div>
-                <label className={label} htmlFor="vip-last">
-                  Last Name
-                </label>
-                <input id="vip-last" name="lastName" className={field} autoComplete="family-name" />
-              </div>
+            <div>
+              <label className={label} htmlFor="vip-first">
+                First Name
+              </label>
+              <input id="vip-first" name="firstName" className={field} autoComplete="given-name" />
+            </div>
+            <div>
+              <label className={label} htmlFor="vip-last">
+                Last Name
+              </label>
+              <input id="vip-last" name="lastName" className={field} autoComplete="family-name" />
             </div>
             <div>
               <label className={label} htmlFor="vip-email">
@@ -134,6 +132,21 @@ export function VipGate() {
               </label>
               <input id="vip-phone" name="phone" className={field} autoComplete="tel" />
             </div>
+
+            <div className="pt-1">
+              <label className={label}>I am a</label>
+              <div className="mt-2 flex gap-3">
+                <label className="flex flex-1 cursor-pointer items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 has-[:checked]:border-mint/60 has-[:checked]:bg-mint/10">
+                  <input type="radio" name="type" value="agent" className="h-4 w-4 accent-mint" />
+                  <span className="text-sm font-medium text-foreground">Agent</span>
+                </label>
+                <label className="flex flex-1 cursor-pointer items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 has-[:checked]:border-mint/60 has-[:checked]:bg-mint/10">
+                  <input type="radio" name="type" value="agency" className="h-4 accent-mint" />
+                  <span className="text-sm font-medium text-foreground">Agency</span>
+                </label>
+              </div>
+            </div>
+
 
             <button
               type="submit"
