@@ -45,7 +45,7 @@ export function Hero() {
                 className="relative flex flex-1 flex-col items-center gap-3 px-2 py-5 text-center"
               >
                 {index < indicators.length - 1 && (
-                  <div className="absolute right-0 top-1/2 h-10 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-border to-transparent" />
+                  <div className="absolute right-0 top-1/2 h-12 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-white/25 to-transparent" />
                 )}
                 <Icon className="h-9 w-9 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
                 <span className="font-display text-[0.72rem] font-bold uppercase leading-tight tracking-[0.04em] sm:text-base">
