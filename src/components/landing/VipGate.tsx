@@ -142,7 +142,7 @@ export function VipGate() {
                 </label>
                 <label className="flex flex-1 cursor-pointer items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 has-[:checked]:border-mint/60 has-[:checked]:bg-mint/10">
                   <input type="radio" name="type" value="agency" className="h-4 accent-mint" />
-                  <span className="text-sm font-medium text-foreground">Agency</span>
+                  <span className="text-sm font-medium text-foreground">Agency Owner</span>
                 </label>
               </div>
             </div>
