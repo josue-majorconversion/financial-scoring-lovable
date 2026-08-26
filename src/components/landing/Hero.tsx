@@ -38,11 +38,11 @@ export function Hero() {
             Financial Scoring helps agents recognize the needs, opportunities, and financial priorities hidden inside every prospect — before the conversation even begins.
           </p>
 
-          <ul className="mt-2 grid w-full max-w-3xl grid-cols-3 gap-2 sm:gap-4">
-            {indicators.map(({ icon: Icon, label }) => (
+          <ul className="mt-2 flex w-full max-w-3xl animate-pulse-glow overflow-hidden rounded-2xl border border-border bg-surface/80 shadow-[0_0_40px_rgba(255,255,255,0.12)]">
+            {indicators.map(({ icon: Icon, label }, index) => (
               <li
                 key={label}
-                className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface/60 px-2 py-5 text-center"
+                className="flex flex-1 flex-col items-center gap-3 px-2 py-5 text-center"
               >
                 <Icon className="h-9 w-9 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
                 <span className="font-display text-[0.72rem] font-bold uppercase leading-tight tracking-[0.04em] sm:text-base">
