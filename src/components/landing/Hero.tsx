@@ -29,7 +29,7 @@ export function Hero() {
             <span className="block text-[1.7em] text-[#ff3b30]">dead</span>
           </h1>
 
-          <p className="font-display font-bold uppercase tracking-[0.04em] text-foreground/90">
+          <p className="my-6 font-display font-bold uppercase tracking-[0.04em] text-foreground/90 sm:my-8">
             <span className="block text-[1.65rem] sm:text-[2.25rem]">Stop buying leads.</span>
             <span className="block text-[1.95rem] underline decoration-mint underline-offset-4 sm:text-[2.65rem]">Start buying certainty.</span>
           </p>
@@ -51,7 +51,7 @@ export function Hero() {
             ))}
           </ul>
 
-          <h2 className="mt-24 font-display text-4xl font-black uppercase leading-none tracking-tight text-mint sm:mt-28 sm:text-6xl">
+          <h2 className="mt-10 font-display text-7xl font-black uppercase leading-[0.85] text-mint sm:mt-12 sm:text-8xl lg:text-9xl">
             Here's How...
           </h2>
         </div>
