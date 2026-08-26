@@ -1,9 +1,9 @@
 import { TrendingUp, DollarSign, PhoneOff } from "lucide-react";
 
 const indicators = [
-  { icon: TrendingUp, label: "Make More Deals" },
-  { icon: DollarSign, label: "Earn Higher Commissions" },
-  { icon: PhoneOff, label: "Make Fewer Calls" },
+  { icon: TrendingUp, label: "Make More Deals", lines: ["Make More", "Deals."] as const },
+  { icon: DollarSign, label: "Earn Higher Commissions", lines: ["Earn Higher", "Commissions."] as const },
+  { icon: PhoneOff, label: "Make Fewer Calls", lines: ["Make Fewer", "Calls."] as const },
 ];
 
 export function Hero() {
