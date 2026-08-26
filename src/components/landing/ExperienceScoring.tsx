@@ -12,14 +12,13 @@ export function ExperienceScoring() {
         <SectionHeading
           eyebrow="Try it for yourself"
           title={
-            <span className="block">
-              <span className="block">Experience</span>
-              <span className="block text-mint">Scoring</span>
+            <span>
+              Experience <span className="text-mint">Scoring</span>
             </span>
           }
         />
 
-        <h3 className="mx-auto mt-6 max-w-3xl text-center font-display text-3xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-5xl">
+        <h3 className="mx-auto mt-6 max-w-3xl text-center font-display text-3xl font-black uppercase italic leading-[0.95] tracking-tight text-white sm:text-5xl">
           See What Your Clients See
         </h3>
 
