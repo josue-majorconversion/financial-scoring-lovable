@@ -5,9 +5,8 @@ export function ValueShift() {
         <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:gap-14 lg:text-left">
           <h2 className="flex-1 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
             Financial scoring is{" "}
-            <span className="text-gradient-mint">changing</span> how agents{" "}
-            <span className="text-gradient-mint">buy</span> and{" "}
-            <span className="text-gradient-mint">close leads</span>.
+            <span className="italic">changing</span> how agents{" "}
+            <span className="text-gradient-mint">buy and close leads.</span>
           </h2>
           <div className="w-full max-w-xl flex-1">
             <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-surface p-6 glow-mint">
