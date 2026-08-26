@@ -51,7 +51,7 @@ export function Hero() {
             ))}
           </ul>
 
-          <h2 className="mt-2 font-display text-3xl font-black uppercase leading-none tracking-tight text-mint sm:text-5xl">
+          <h2 className="mt-24 font-display text-4xl font-black uppercase leading-none tracking-tight text-mint sm:mt-28 sm:text-6xl">
             Here's How...
           </h2>
         </div>
