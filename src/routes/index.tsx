@@ -44,6 +44,7 @@ function Index() {
       <Nav />
       <main className="min-h-screen bg-background">
         <Hero />
+        <ValueShift />
         <ExperienceScoring />
         <DashboardPreview />
         <WhyClientsCare />
