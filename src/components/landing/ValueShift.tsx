@@ -35,7 +35,7 @@ export function ValueShift() {
                   <rect x="70" y="220" width="160" height="140" rx="12" fill="url(#redGrad)" />
                   <rect x="70" y="40" width="160" height="180" rx="12" fill="url(#greenGrad)" filter="url(#glow)" />
                   <line x1="60" y1="40" x2="50" y2="40" stroke="#20f0e8" strokeWidth="2" />
-                  <line x1="60" y1="220" x2="50" x2="220" stroke="#ef4444" strokeWidth="2" />
+                  <line x1="60" y1="220" x2="50" y2="220" stroke="#ef4444" strokeWidth="2" />
                   <line x1="50" y1="40" x2="50" y2="360" stroke="rgba(32, 240, 232, 0.25)" strokeWidth="2" />
                 </svg>
               </div>
