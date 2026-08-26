@@ -1,9 +1,9 @@
 import { TrendingUp, DollarSign, PhoneOff } from "lucide-react";
 
 const indicators = [
-  { icon: TrendingUp, label: "Make More Deals", lines: ["Make More", "Deals."] as const },
-  { icon: DollarSign, label: "Earn Higher Commissions", lines: ["Earn Higher", "Commissions."] as const },
-  { icon: PhoneOff, label: "Make Fewer Calls", lines: ["Make Fewer", "Calls."] as const },
+  { icon: TrendingUp, label: "Make More Deals", lines: ["Make More", "Deals"] as const },
+  { icon: DollarSign, label: "Earn Higher Commissions", lines: ["Earn Higher", "Commissions"] as const },
+  { icon: PhoneOff, label: "Make Fewer Calls", lines: ["Make Fewer", "Calls"] as const },
 ];
 
 export function Hero() {
@@ -44,7 +44,7 @@ export function Hero() {
                   <div className="absolute right-0 top-1/2 h-12 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-white/25 to-transparent" />
                 )}
                 <Icon className="h-9 w-9 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
-                <span className="font-display text-base font-bold uppercase leading-tight tracking-[0.04em] sm:text-xl">
+                <span className="font-display text-lg font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl">
                   <span className="block">{lines[0]}</span>
                   <span className="block">{lines[1]}</span>
                 </span>
