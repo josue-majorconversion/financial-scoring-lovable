@@ -50,6 +50,10 @@ export function Hero() {
               </li>
             ))}
           </ul>
+
+          <h2 className="mt-2 font-display text-3xl font-black uppercase leading-none tracking-tight text-mint sm:text-5xl">
+            Here's How...
+          </h2>
         </div>
       </div>
     </section>
