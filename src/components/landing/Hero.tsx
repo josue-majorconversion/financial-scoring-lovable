@@ -29,13 +29,9 @@ export function Hero() {
             <span className="block text-[1.7em] text-[#ff3b30]">dead</span>
           </h1>
 
-          <p className="font-display font-medium uppercase tracking-[0.04em] text-foreground/90">
-            <span className="block text-2xl sm:text-3xl">Stop buying leads.</span>
-            <span className="block text-3xl sm:text-4xl">Start buying certainty.</span>
-          </p>
-
-          <p className="max-w-3xl text-base font-semibold leading-relaxed text-foreground/80 sm:text-lg">
-            Financial Scoring helps agents recognize the needs, opportunities, and financial priorities hidden inside every prospect — before the conversation even begins.
+          <p className="font-display font-bold uppercase tracking-[0.04em] text-foreground/90">
+            <span className="block text-[1.65rem] sm:text-[2.25rem]">Stop buying leads.</span>
+            <span className="block text-[1.95rem] underline decoration-mint underline-offset-4 sm:text-[2.65rem]">Start buying certainty.</span>
           </p>
 
           <ul className="mt-2 flex w-full max-w-3xl animate-pulse-glow overflow-hidden rounded-2xl border border-border bg-surface/80 shadow-[0_0_40px_rgba(255,255,255,0.12)]">
@@ -54,6 +50,10 @@ export function Hero() {
               </li>
             ))}
           </ul>
+
+          <h2 className="mt-2 font-display text-3xl font-black uppercase leading-none tracking-tight text-mint sm:text-5xl">
+            Here's How...
+          </h2>
         </div>
       </div>
     </section>
