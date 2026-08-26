@@ -45,11 +45,11 @@ function Index() {
       <main className="min-h-screen bg-background">
         <Hero />
         <ValueShift />
-        <ExperienceScoring />
-        <DashboardPreview />
         <WhyClientsCare />
         <WhyAgentsCare />
         <RippleEffect />
+        <ExperienceScoring />
+        <DashboardPreview />
         <VideoTestimonials />
         <WhatsNext />
         <FinalCta />
