@@ -34,8 +34,8 @@ export function Hero() {
             <span className="block text-3xl sm:text-4xl">Start buying certainty.</span>
           </p>
 
-          <p className="max-w-2xl text-base font-semibold leading-relaxed text-foreground/80 sm:text-lg">
-            Financial Scoring helps agents recognize the needs, opportunities, and financial priorities hidden inside every prospect — before the conversation begins.
+          <p className="max-w-3xl text-base font-semibold leading-relaxed text-foreground/80 sm:text-lg">
+            Financial Scoring helps agents recognize the needs, opportunities, and financial priorities hidden inside every prospect — before the conversation even begins.
           </p>
 
           <ul className="mt-2 grid w-full max-w-3xl grid-cols-3 gap-2 sm:gap-4">
