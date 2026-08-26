@@ -20,7 +20,7 @@ export function ExperienceScoring() {
 
         <div className="mx-auto mt-6 flex max-w-3xl items-center justify-center gap-4">
           <div className="h-0.5 w-16 bg-mint sm:w-24" />
-          <h3 className="shrink-0 text-center font-display text-xl font-black uppercase italic leading-[0.95] tracking-tight text-white sm:text-3xl">
+          <h3 className="shrink-0 text-center font-display text-xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-3xl">
             Try it for yourself
           </h3>
           <div className="h-0.5 w-16 bg-mint sm:w-24" />
