@@ -18,9 +18,13 @@ export function ExperienceScoring() {
           }
         />
 
-        <h3 className="mx-auto mt-6 max-w-3xl text-center font-display text-3xl font-black uppercase italic leading-[0.95] tracking-tight text-white sm:text-5xl">
-          See What Your Clients See
-        </h3>
+        <div className="mx-auto mt-6 flex max-w-3xl items-center gap-4">
+          <div className="h-px flex-1 bg-mint/40" />
+          <h3 className="shrink-0 text-center font-display text-xl font-black uppercase italic leading-[0.95] tracking-tight text-white sm:text-3xl">
+            See What Your Clients See
+          </h3>
+          <div className="h-px flex-1 bg-mint/40" />
+        </div>
 
         <div className="mt-10">
           <p className="mb-3 text-center font-display text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
