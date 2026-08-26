@@ -14,15 +14,18 @@ export function ExperienceScoring() {
           title={
             <span className="block">
               <span className="block">Experience</span>
-              <span className="block text-mint">Financial Scoring</span>
+              <span className="block text-mint">Scoring</span>
             </span>
           }
-          subtitle="Answer the assessment and see how a few focused questions can create a clearer financial conversation."
         />
+
+        <h3 className="mx-auto mt-6 max-w-3xl text-center font-display text-3xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-5xl">
+          See What Your Clients See
+        </h3>
 
         <div className="mt-10">
           <p className="mb-3 text-center font-display text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-            Live Financial Scoring Assessment
+            Demo Financial Scoring Assessment
           </p>
 
           <div className="rounded-3xl border border-mint/40 bg-card p-1.5 glow-mint sm:p-3">
