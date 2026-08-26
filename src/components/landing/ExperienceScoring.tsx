@@ -11,13 +11,17 @@ export function ExperienceScoring() {
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Experience Scoring"
-          title="Try it for yourself"
+          title={
+            <span>
+              See what <span className="text-mint">your clients see</span>
+            </span>
+          }
         />
 
         <div className="mx-auto mt-6 flex max-w-3xl items-center gap-4">
           <div className="h-px flex-1 bg-mint/40" />
           <h3 className="shrink-0 text-center font-display text-xl font-black uppercase italic leading-[0.95] tracking-tight text-white sm:text-3xl">
-            See What Your Clients See
+            Try it for yourself
           </h3>
           <div className="h-px flex-1 bg-mint/40" />
         </div>
