@@ -10,12 +10,8 @@ export function ExperienceScoring() {
     >
       <div className="mx-auto max-w-4xl">
         <SectionHeading
-          eyebrow="Try it for yourself"
-          title={
-            <span>
-              Experience <span className="text-mint">Scoring</span>
-            </span>
-          }
+          eyebrow="Experience Scoring"
+          title="Try it for yourself"
         />
 
         <div className="mx-auto mt-6 flex max-w-3xl items-center gap-4">
