@@ -26,7 +26,7 @@ export function Hero() {
 
           <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
             <span className="block text-[1.7em] text-[#ff3b30]">STOP</span>
-            <span className="flex items-center justify-center gap-2 text-[0.55em] sm:gap-4">
+            <span className="my-2 flex items-center justify-center gap-2 text-[0.55em] sm:my-3 sm:gap-4">
               <span className="h-0.5 w-10 bg-white/80 sm:w-16" />
               Calling
               <span className="h-0.5 w-10 bg-white/80 sm:w-16" />
