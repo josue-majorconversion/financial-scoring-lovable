@@ -46,16 +46,19 @@ export function Hero() {
             </span>
           </p>
 
-          <ul className="mt-2 flex w-full max-w-3xl animate-pulse-glow overflow-hidden rounded-2xl border border-border bg-surface/80 shadow-[0_0_40px_rgba(255,255,255,0.12)]">
+          <ul className="mt-2 flex w-full max-w-3xl animate-pulse-glow flex-col overflow-hidden rounded-2xl border border-border bg-surface/80 shadow-[0_0_40px_rgba(255,255,255,0.12)] sm:flex-row">
             {indicators.map(({ icon: Icon, label, lines }, index) => (
               <li
                 key={label}
-                className="relative flex flex-1 flex-col items-center gap-3 px-2 py-5 text-center"
+                className="relative flex flex-1 flex-row items-center gap-4 px-4 py-4 text-left sm:flex-col sm:gap-3 sm:px-2 sm:py-5 sm:text-center"
               >
                 {index < indicators.length - 1 && (
-                  <div className="absolute right-0 top-1/2 h-12 w-px -translate-y-1/2 bg-gradient-to-b from-transparent via-white/25 to-transparent" />
+                  <>
+                    <div className="absolute bottom-0 left-1/2 hidden h-px w-24 -translate-x-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent sm:block sm:bg-gradient-to-b" />
+                    <div className="absolute bottom-0 left-1/2 block h-px w-24 -translate-x-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent sm:hidden" />
+                  </>
                 )}
-                <Icon className="h-9 w-9 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
+                <Icon className="h-9 w-9 shrink-0 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
                 <span className="font-display text-lg font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl">
                   <span className="block">{lines[0]}</span>
                   <span className="block">{lines[1]}</span>
