@@ -50,7 +50,7 @@ export function Hero() {
             {indicators.map(({ icon: Icon, label, lines }, index) => (
               <li
                 key={label}
-                className="relative flex flex-1 flex-row items-center gap-4 px-4 py-4 text-left sm:flex-col sm:gap-3 sm:px-2 sm:py-5 sm:text-center"
+                className="relative flex flex-1 flex-row items-center justify-center gap-4 px-4 py-4 text-center sm:flex-col sm:gap-3 sm:px-2 sm:py-5"
               >
                 {index < indicators.length - 1 && (
                   <>
