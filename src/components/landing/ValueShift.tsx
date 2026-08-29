@@ -7,49 +7,68 @@ export function ValueShift() {
             Financial scoring is changing how agents{" "}
             <span className="text-gradient-mint">buy and close leads.</span>
           </h2>
-          <div className="w-full max-w-xl flex-1">
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-surface p-6 glow-mint">
-              <div className="absolute inset-x-0 top-0 h-full w-full">
-                <svg
-                  viewBox="0 0 300 400"
-                  className="h-full w-full"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <defs>
-                    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#ef4444" />
-                      <stop offset="100%" stopColor="#b91c1c" />
-                    </linearGradient>
-                    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#20f0e8" />
-                      <stop offset="100%" stopColor="#00c7d4" />
-                    </linearGradient>
-                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                      <feGaussianBlur stdDeviation="6" result="blur" />
-                      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                    </filter>
-                  </defs>
-                  <rect x="70" y="220" width="160" height="140" rx="12" fill="url(#redGrad)" />
-                  <rect x="70" y="40" width="160" height="180" rx="12" fill="url(#greenGrad)" filter="url(#glow)" />
-                  <line x1="60" y1="40" x2="50" y2="40" stroke="#20f0e8" strokeWidth="2" />
-                  <line x1="60" y1="220" x2="50" y2="220" stroke="#ef4444" strokeWidth="2" />
-                  <line x1="50" y1="40" x2="50" y2="360" stroke="rgba(32, 240, 232, 0.25)" strokeWidth="2" />
-                </svg>
+          <div className="w-full flex-1">
+            <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-[#02090b] p-4 sm:p-6 glow-mint">
+              <div className="mb-3 flex items-center gap-2">
+                <span className="h-4 w-1 rounded-full bg-mint" />
+                <span className="font-display text-[11px] uppercase tracking-[0.25em] text-white sm:text-sm">
+                  Average transaction value
+                </span>
               </div>
-              <div className="relative z-10 flex h-full flex-col justify-between py-4 text-center font-display font-black uppercase leading-none tracking-tight">
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-4xl text-white sm:text-5xl">$8,800</span>
-                  <span className="text-sm text-white/90 sm:text-base">per transaction</span>
-                  <span className="text-sm text-white/90 sm:text-base">with Financial Scoring</span>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                  <span className="text-4xl text-white sm:text-5xl">$1,200</span>
-                  <span className="text-sm text-white/90 sm:text-base">per transaction</span>
-                </div>
-              </div>
+              <svg viewBox="0 0 720 400" className="h-auto w-full" role="img" aria-label="Average transaction value with and without Financial Scoring">
+                <defs>
+                  <linearGradient id="vsGreenFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.55" />
+                    <stop offset="100%" stopColor="#22c55e" stopOpacity="0.02" />
+                  </linearGradient>
+                  <linearGradient id="vsRedFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.55" />
+                    <stop offset="100%" stopColor="#ef4444" stopOpacity="0.05" />
+                  </linearGradient>
+                </defs>
+
+                {/* green area */}
+                <path
+                  d="M20 350 L70 200 L130 150 L210 155 L330 120 L440 75 L520 92 L520 350 Z"
+                  fill="url(#vsGreenFill)"
+                />
+                <path
+                  d="M20 350 L70 200 L130 150 L210 155 L330 120 L440 75 L520 92"
+                  fill="none"
+                  stroke="#22c55e"
+                  strokeWidth="5"
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                />
+                <circle cx="520" cy="92" r="8" fill="#22c55e" />
+
+                {/* red area */}
+                <path
+                  d="M20 350 L70 320 L130 310 L210 315 L330 300 L440 310 L520 312 L520 350 Z"
+                  fill="url(#vsRedFill)"
+                />
+                <path
+                  d="M20 350 L70 320 L130 310 L210 315 L330 300 L440 310 L520 312"
+                  fill="none"
+                  stroke="#ef4444"
+                  strokeWidth="5"
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                />
+                <circle cx="520" cy="312" r="8" fill="#ef4444" />
+
+                <line x1="20" y1="352" x2="700" y2="352" stroke="rgba(255,255,255,0.15)" strokeWidth="2" />
+
+                {/* labels */}
+                <text x="545" y="70" fill="#22c55e" className="font-display" fontSize="15" fontWeight="700" letterSpacing="1">WITH FINANCIAL SCORING</text>
+                <text x="545" y="115" fill="#ffffff" className="font-display" fontSize="42" fontWeight="900">UP TO $8,800</text>
+
+                <text x="545" y="290" fill="#ef4444" className="font-display" fontSize="15" fontWeight="700" letterSpacing="1">WITHOUT SCORING</text>
+                <text x="545" y="335" fill="#ffffff" className="font-display" fontSize="42" fontWeight="900">$1,200</text>
+              </svg>
             </div>
           </div>
+
         </div>
       </div>
     </section>
