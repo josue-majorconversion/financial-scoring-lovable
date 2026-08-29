@@ -1,4 +1,4 @@
-const profileRows = [
+const profileRows: [string, string][] = [
   ["Monthly income", "$30,000"],
   ["Monthly savings", "$2,500"],
   ["Birth year", "1970"],
