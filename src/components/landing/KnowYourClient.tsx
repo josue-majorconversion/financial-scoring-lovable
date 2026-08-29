@@ -18,7 +18,7 @@ export function KnowYourClient() {
                 className="w-full rounded-xl"
               />
             </div>
-            <p className="mt-4 text-center font-display text-sm font-bold uppercase tracking-wider text-mint sm:text-base">
+            <p className="mt-4 inline-block border-l-2 border-mint/60 pl-3 text-left text-xs italic leading-relaxed text-white/70 sm:text-sm">
               Real Lead Data for a potential IUL opportunity
             </p>
           </div>
