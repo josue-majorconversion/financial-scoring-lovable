@@ -19,7 +19,7 @@ export function KnowYourClient() {
               />
             </div>
             <p className="mt-4 inline-block border-l-2 border-mint/60 pl-3 text-left text-xs italic leading-relaxed text-white/70 sm:text-sm">
-              Real Lead Data for a potential IUL opportunity
+              Real FinancialScoring.AI Proprietary Lead Data displaying a potential IUL Sale Opportunity
             </p>
           </div>
         </div>
