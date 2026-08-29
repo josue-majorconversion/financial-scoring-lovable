@@ -3,12 +3,12 @@ export function ValueShift() {
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:gap-14 lg:text-left">
-          <h2 className="flex-1 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
+          <h2 className="flex-1 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:order-2 lg:text-6xl">
             Financial scoring is changing how agents{" "}
             <span className="text-gradient-mint">buy and close leads.</span>
           </h2>
 
-          <div className="w-full flex-1">
+          <div className="w-full flex-1 lg:order-1">
             <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-[#02090b] p-4 sm:p-6 glow-mint">
               <div className="mb-4 flex items-center gap-2">
                 <span className="h-4 w-1 rounded-full bg-mint" />
