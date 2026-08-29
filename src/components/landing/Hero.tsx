@@ -25,8 +25,15 @@ export function Hero() {
           </p>
 
           <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
-            <span className="block">Leads are</span>
-            <span className="block text-[1.7em] text-[#ff3b30]">dead</span>
+            <span className="block text-[1.7em] text-[#ff3b30]">STOP</span>
+            <span className="block">Calling</span>
+            <span className="relative block text-[1.7em]">
+              Blind
+              <span
+                className="absolute left-0 top-1/2 h-[0.12em] w-full -translate-y-1/2 -rotate-6 bg-[#ff3b30]"
+                aria-hidden="true"
+              />
+            </span>
           </h1>
 
           <p className="my-6 font-display font-bold uppercase tracking-[0.04em] text-foreground/90 sm:my-8">
