@@ -6,7 +6,7 @@ const profileRows: [string, string][] = [
   ["Credit score", "800"],
 ];
 
-const assetRows = [
+const assetRows: [string, string][] = [
   ["Retirement (401k/IRA)", "$1,895,000"],
   ["Roth / tax-free", "$0"],
   ["Brokerage", "$50,000"],
