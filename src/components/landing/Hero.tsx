@@ -67,7 +67,7 @@ export function Hero() {
             ))}
           </ul>
 
-          <h2 className="mt-10 whitespace-nowrap font-display text-5xl font-black uppercase italic leading-[0.85] text-mint sm:mt-12 sm:text-8xl lg:text-9xl">
+          <h2 className="mt-10 whitespace-nowrap font-display text-6xl font-black uppercase italic leading-[0.85] text-mint sm:mt-12 sm:text-8xl lg:text-9xl">
             Here's How...
           </h2>
         </div>
