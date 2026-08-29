@@ -7,68 +7,113 @@ export function ValueShift() {
             Financial scoring is changing how agents{" "}
             <span className="text-gradient-mint">buy and close leads.</span>
           </h2>
+
           <div className="w-full flex-1">
             <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-[#02090b] p-4 sm:p-6 glow-mint">
-              <div className="mb-3 flex items-center gap-2">
+              <div className="mb-4 flex items-center gap-2">
                 <span className="h-4 w-1 rounded-full bg-mint" />
-                <span className="font-display text-[11px] uppercase tracking-[0.25em] text-white sm:text-sm">
+                <span className="font-display text-[11px] uppercase tracking-[0.25em] text-white/90 sm:text-xs">
                   Average transaction value
                 </span>
               </div>
-              <svg viewBox="0 0 720 400" className="h-auto w-full" role="img" aria-label="Average transaction value with and without Financial Scoring">
+
+              {/* chart */}
+              <svg
+                viewBox="0 0 400 220"
+                className="h-auto w-full"
+                role="img"
+                aria-label="Average transaction value with and without Financial Scoring"
+              >
                 <defs>
                   <linearGradient id="vsGreenFill" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.55" />
-                    <stop offset="100%" stopColor="#22c55e" stopOpacity="0.02" />
+                    <stop offset="0%" stopColor="#22c55e" stopOpacity="0.5" />
+                    <stop offset="100%" stopColor="#22c55e" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient id="vsRedFill" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.55" />
-                    <stop offset="100%" stopColor="#ef4444" stopOpacity="0.05" />
+                    <stop offset="0%" stopColor="#ef4444" stopOpacity="0.45" />
+                    <stop offset="100%" stopColor="#ef4444" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient id="vsGreenLine" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stopColor="#16a34a" />
+                    <stop offset="100%" stopColor="#4ade80" />
                   </linearGradient>
                 </defs>
 
-                {/* green area */}
+                {/* grid */}
+                {[40, 85, 130, 175].map((y) => (
+                  <line
+                    key={y}
+                    x1="0"
+                    y1={y}
+                    x2="400"
+                    y2={y}
+                    stroke="rgba(255,255,255,0.06)"
+                    strokeWidth="1"
+                  />
+                ))}
+
+                {/* green */}
                 <path
-                  d="M20 350 L70 200 L130 150 L210 155 L330 120 L440 75 L520 92 L520 350 Z"
+                  d="M0 185 C60 175 70 120 120 108 C170 96 190 96 230 78 C280 56 320 44 400 28 L400 200 L0 200 Z"
                   fill="url(#vsGreenFill)"
                 />
                 <path
-                  d="M20 350 L70 200 L130 150 L210 155 L330 120 L440 75 L520 92"
+                  d="M0 185 C60 175 70 120 120 108 C170 96 190 96 230 78 C280 56 320 44 400 28"
                   fill="none"
-                  stroke="#22c55e"
-                  strokeWidth="5"
-                  strokeLinejoin="round"
+                  stroke="url(#vsGreenLine)"
+                  strokeWidth="4"
                   strokeLinecap="round"
                 />
-                <circle cx="520" cy="92" r="8" fill="#22c55e" />
+                <circle cx="396" cy="29" r="6" fill="#4ade80" />
+                <circle cx="396" cy="29" r="12" fill="#4ade80" opacity="0.2" />
 
-                {/* red area */}
+                {/* red */}
                 <path
-                  d="M20 350 L70 320 L130 310 L210 315 L330 300 L440 310 L520 312 L520 350 Z"
+                  d="M0 190 C80 186 140 184 200 182 C270 180 330 179 400 178 L400 200 L0 200 Z"
                   fill="url(#vsRedFill)"
                 />
                 <path
-                  d="M20 350 L70 320 L130 310 L210 315 L330 300 L440 310 L520 312"
+                  d="M0 190 C80 186 140 184 200 182 C270 180 330 179 400 178"
                   fill="none"
                   stroke="#ef4444"
-                  strokeWidth="5"
-                  strokeLinejoin="round"
+                  strokeWidth="3"
                   strokeLinecap="round"
                 />
-                <circle cx="520" cy="312" r="8" fill="#ef4444" />
+                <circle cx="396" cy="178" r="5" fill="#ef4444" />
 
-                <line x1="20" y1="352" x2="700" y2="352" stroke="rgba(255,255,255,0.15)" strokeWidth="2" />
-
-                {/* labels */}
-                <text x="545" y="70" fill="#22c55e" className="font-display" fontSize="15" fontWeight="700" letterSpacing="1">WITH FINANCIAL SCORING</text>
-                <text x="545" y="115" fill="#ffffff" className="font-display" fontSize="42" fontWeight="900">UP TO $8,800</text>
-
-                <text x="545" y="290" fill="#ef4444" className="font-display" fontSize="15" fontWeight="700" letterSpacing="1">WITHOUT SCORING</text>
-                <text x="545" y="335" fill="#ffffff" className="font-display" fontSize="42" fontWeight="900">$1,200</text>
+                <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(255,255,255,0.14)" strokeWidth="1.5" />
               </svg>
+
+              {/* readouts */}
+              <div className="mt-5 grid grid-cols-2 gap-3">
+                <div className="rounded-xl border border-[#22c55e]/30 bg-[#22c55e]/10 p-3 text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[#4ade80]" />
+                    <span className="font-display text-[10px] uppercase tracking-widest text-[#4ade80]">
+                      With scoring
+                    </span>
+                  </div>
+                  <div className="mt-1 font-display text-2xl font-black leading-none text-white sm:text-3xl">
+                    $8,800
+                  </div>
+                  <div className="mt-1 text-[11px] text-white/60">per transaction</div>
+                </div>
+
+                <div className="rounded-xl border border-[#ef4444]/30 bg-[#ef4444]/10 p-3 text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[#ef4444]" />
+                    <span className="font-display text-[10px] uppercase tracking-widest text-[#ef4444]">
+                      Without scoring
+                    </span>
+                  </div>
+                  <div className="mt-1 font-display text-2xl font-black leading-none text-white sm:text-3xl">
+                    $1,200
+                  </div>
+                  <div className="mt-1 text-[11px] text-white/60">per transaction</div>
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
