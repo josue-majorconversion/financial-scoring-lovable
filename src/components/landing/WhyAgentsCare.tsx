@@ -59,7 +59,7 @@ export function WhyAgentsCare() {
           Why Agents Care
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl whitespace-nowrap text-center font-display text-3xl font-bold uppercase leading-[0.95] sm:text-5xl lg:text-6xl">
-          More Deals. More Value Per Deal.
+          More Deals. <span className="text-mint">More Value Per Deal.</span>
         </h2>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
