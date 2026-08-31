@@ -1,4 +1,4 @@
-import { Check, X, AlertTriangle } from "lucide-react";
+import { Check, X, AlertTriangle, AlertCircle } from "lucide-react";
 
 type MarkType = "yes" | "no" | "warn";
 
