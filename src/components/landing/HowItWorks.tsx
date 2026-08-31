@@ -96,8 +96,8 @@ export function HowItWorks() {
                     {/* dark inner disc */}
                     <circle cx="60" cy="60" r="45" fill="#0d3f3d" />
                     {/* needle pointing at green zone */}
-                    <g transform="rotate(38 60 60)">
-                      <rect x="14" y="55.5" width="16" height="9" rx="4.5" fill="#02090b" stroke="#fff" strokeWidth="2" />
+                    <g transform="rotate(218 60 60)">
+                      <rect x="42" y="55.5" width="22" height="9" rx="4.5" fill="#02090b" stroke="#fff" strokeWidth="2" />
                     </g>
                     {/* score text */}
                     <text x="60" y="64" textAnchor="middle" fill="#fff" fontSize="34" fontWeight="900" fontFamily="Oswald, sans-serif">
