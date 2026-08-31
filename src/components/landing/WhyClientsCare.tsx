@@ -33,7 +33,7 @@ export function WhyClientsCare() {
           Why Leads Care
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[0.95] sm:text-6xl">
-          A Better Client Experience
+          A Better <span className="block text-mint">Client Experience</span>
         </h2>
         <p className="mx-auto mt-4 max-w-md text-center text-base font-bold text-muted-foreground sm:text-lg">
           One Financial Score helps turn a confusing financial picture into a clear place to start.
