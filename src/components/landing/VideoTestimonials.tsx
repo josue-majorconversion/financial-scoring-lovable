@@ -25,7 +25,7 @@ function Card({ id, category }: { id: string; category: string }) {
           Placeholder
         </span>
       </div>
-      <div className="mt-5 flex flex-1 flex-col">
+      <div className="mt-5 flex flex-1 flex-col items-center text-center">
         <p className="font-display text-xl font-bold uppercase tracking-[0.04em]">{id}</p>
         <p className="mt-1 text-xs uppercase tracking-[0.18em] text-mint">{category}</p>
       </div>
