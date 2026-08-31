@@ -51,9 +51,10 @@ function Index() {
         <ValueShift />
         <HowItWorks />
         <LeadComparison />
-        <WhyClientsCare />
         <WhyAgentsCare />
+        <WhyClientsCare />
         <RippleEffect />
+
         <ExperienceScoring />
         <DashboardPreview />
         <VideoTestimonials />
