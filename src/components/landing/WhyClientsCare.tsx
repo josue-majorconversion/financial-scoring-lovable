@@ -13,7 +13,7 @@ const primary = [
     visual: "close-more-deals" as const,
   },
   {
-    title: "SEE IF THEY'RE ON TRACK",
+    title: "SEE IF THEY ARE ON TRACK",
     body: "See whether today’s path points toward the retirement they want.",
     visual: "retirement" as const,
   },
