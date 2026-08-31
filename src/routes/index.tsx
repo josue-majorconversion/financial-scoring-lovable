@@ -13,7 +13,7 @@ import { WhyAgentsCare } from "@/components/landing/WhyAgentsCare";
 import { RippleEffect } from "@/components/landing/RippleEffect";
 import { VideoTestimonials } from "@/components/landing/VideoTestimonials";
 import { WhatsNext } from "@/components/landing/WhatsNext";
-import { FinalCta } from "@/components/landing/FinalCta";
+
 import { Footer } from "@/components/landing/Footer";
 import { VipGate } from "@/components/landing/VipGate";
 
@@ -59,7 +59,6 @@ function Index() {
         <DashboardPreview />
         <VideoTestimonials />
         <WhatsNext />
-        <FinalCta />
         <Footer />
       </main>
       </div>
