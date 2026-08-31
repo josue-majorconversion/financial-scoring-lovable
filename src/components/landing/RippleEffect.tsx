@@ -63,10 +63,6 @@ export function RippleEffect() {
 
         </ol>
 
-        <p className="mt-12 text-center font-display text-2xl font-bold uppercase leading-snug sm:text-4xl">
-          Train faster.{" "}
-          <span className="text-gradient-mint">Retain more. Scale sooner.</span>
-        </p>
       </div>
     </section>
   );
