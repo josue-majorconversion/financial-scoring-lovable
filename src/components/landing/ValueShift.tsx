@@ -3,10 +3,15 @@ export function ValueShift() {
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:gap-14 lg:text-left">
-          <h2 className="flex-1 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
-            Financial scoring is changing how agents{" "}
-            <span className="text-gradient-mint">buy and close leads.</span>
-          </h2>
+          <div className="flex-1">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
+              If your answer is yes, read this closely...
+            </p>
+            <h2 className="mt-4 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
+              Financial scoring is changing the way agents{" "}
+              <span className="text-gradient-mint">buy and close leads.</span>
+            </h2>
+          </div>
 
           <div className="w-full flex-1">
             <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-[#02090b] p-4 sm:p-6 glow-mint">
