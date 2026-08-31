@@ -201,10 +201,10 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
         </IconFrame>
       ) : null}
 
-      {/* Know what a bad day could expose — cracked shield */}
+      {/* Know what a bad day could expose — lightbulb insight */}
       {variant === "bad-day" ? (
         <IconFrame>
-          <ShieldAlert size={62} strokeWidth={2.3} />
+          <Lightbulb size={62} strokeWidth={2.3} />
         </IconFrame>
       ) : null}
 
