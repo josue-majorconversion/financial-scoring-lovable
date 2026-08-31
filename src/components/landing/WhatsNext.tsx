@@ -47,7 +47,8 @@ export function WhatsNext() {
           WHAT TO DO NEXT
         </p>
         <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          READY TO TRY IT OUT FOR FREE...
+          READY TO TRY IT OUT{" "}
+          <span className="text-mint">FOR FREE</span>...
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
