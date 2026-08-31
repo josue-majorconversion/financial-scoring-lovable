@@ -4,6 +4,8 @@ import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
 import { ValueShift } from "@/components/landing/ValueShift";
 import { KnowYourClient } from "@/components/landing/KnowYourClient";
+import { HowItWorks } from "@/components/landing/HowItWorks";
+import { LeadComparison } from "@/components/landing/LeadComparison";
 import { ExperienceScoring } from "@/components/landing/ExperienceScoring";
 import { DashboardPreview } from "@/components/landing/DashboardPreview";
 import { WhyClientsCare } from "@/components/landing/WhyClientsCare";
@@ -47,6 +49,8 @@ function Index() {
         <Hero />
         <KnowYourClient />
         <ValueShift />
+        <HowItWorks />
+        <LeadComparison />
         <WhyClientsCare />
         <WhyAgentsCare />
         <RippleEffect />
