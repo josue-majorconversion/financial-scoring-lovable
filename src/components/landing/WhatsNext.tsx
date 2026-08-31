@@ -11,8 +11,8 @@ const steps = [
     body: "You should have received an email from us already with your login details to access your agent dashboard and scoring tools.",
   },
   {
-    title: "Share the Free Offer",
-    body: "Invite prospects to get their Financial Score.",
+    title: "LAUNCH YOUR FIRST OFFER",
+    body: "Invite prospects to get their Financial Score or purchase pre-scored leads.",
   },
 ];
 
