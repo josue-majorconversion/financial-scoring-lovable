@@ -7,10 +7,10 @@ export function DashboardPreview() {
       <div className="absolute inset-0 -z-10 grid-glow opacity-50" aria-hidden="true" />
       <div className="mx-auto max-w-4xl">
         <SectionHeading
-          eyebrow="Inside the platform"
+          eyebrow="INSIDE THE PLATFORM"
         title={
             <span className="block">
-              Know the score. <span className="block text-mint">Know the next call.</span>
+              {"YOUR NEW DASHBOARD\u00a0"}
             </span>
           }
           subtitle="Scored leads, conversation requests, key concerns, and follow-up status stay together in one simple workflow."
