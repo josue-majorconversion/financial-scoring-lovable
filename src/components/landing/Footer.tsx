@@ -6,8 +6,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
         <Logo className="h-10" />
         <p className="text-sm text-muted-foreground">
-          Financial Scoring results are preliminary, based on user-provided estimates, and are not
-          investment advice. This prototype uses fictional data and placeholder CTA destinations.
+          Financial Scoring results are preliminary, based on user-provided estimates, and are not investment advice.&nbsp;
         </p>
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Financial Scoring. All rights reserved.
