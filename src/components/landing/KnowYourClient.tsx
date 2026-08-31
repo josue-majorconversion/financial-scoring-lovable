@@ -12,7 +12,10 @@ export function KnowYourClient() {
             </p>
 
             <h2 className="w-full font-display text-[clamp(1.6rem,8.4vw,2.75rem)] font-black uppercase leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block w-full text-gradient-mint mb-[100px]">If you could see the leads finances…</span>
+              <span className="block w-full mt-[100px] mb-[100px]">
+                <span className="text-white">If you could </span>
+                <span className="text-gradient-mint">see the leads finances…</span>
+              </span>
               <span className="block w-full mb-[100px]">Would you <span className="text-gradient-mint">close more deals?…</span></span>
               <span className="block w-full"><span className="text-gradient-mint">Bigger Deals</span> Even?</span>
             </h2>
