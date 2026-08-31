@@ -50,9 +50,12 @@ export function WhatsNext() {
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
           What&rsquo;s next
         </p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
+        <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
           Launch your first{" "}
-          <span className="text-gradient-mint">Financial Scoring offer.</span>
+          <span className="text-gradient-mint">
+            Financial Scoring
+            <br className="hidden sm:block" /> offer.
+          </span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
