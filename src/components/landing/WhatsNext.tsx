@@ -1,20 +1,16 @@
 import { toast } from "sonner";
-import { Users, CircleUser, Share2 } from "lucide-react";
 import { Cta } from "./Cta";
 
 const steps = [
   {
-    icon: Users,
     title: "Join the Community",
     body: "Get training, examples, and a clear rollout path.",
   },
   {
-    icon: CircleUser,
     title: "Open Your Account",
     body: "Access your agent dashboard and scoring tools.",
   },
   {
-    icon: Share2,
     title: "Share the Free Offer",
     body: "Invite prospects to get their Financial Score.",
   },
@@ -46,16 +42,14 @@ export function WhatsNext() {
   return (
     <section className="relative isolate overflow-hidden px-5 py-24 sm:px-8 sm:py-28">
       <div className="absolute inset-0 -z-10 grid-glow opacity-60" aria-hidden="true" />
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          What&rsquo;s next
+          What Happens Next
         </p>
         <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          Launch your first{" "}
-          <span className="text-gradient-mint">
-            Financial Scoring
-            <br className="hidden sm:block" /> offer.
-          </span>
+          Launch your first
+          <br />
+          <span className="text-gradient-mint">Financial Scoring offer.</span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -64,20 +58,18 @@ export function WhatsNext() {
         </p>
 
         <ol className="mt-10 grid gap-4 sm:grid-cols-3">
-          {steps.map(({ icon: Icon, title, body }, i) => (
+          {steps.map(({ title, body }, i) => (
             <li
               key={title}
-              className="flex items-center gap-4 rounded-2xl card-surface p-5 sm:flex-col sm:text-center"
+              className="flex flex-col items-center rounded-2xl card-surface p-6 text-center"
             >
-              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-mint/10">
-                <Icon className="h-7 w-7 text-mint" aria-hidden="true" />
+              <span className="grid h-10 w-10 place-items-center rounded-full bg-mint font-display text-sm font-bold text-[#02090b]">
+                {i + 1}
               </span>
-              <div className="min-w-0">
-                <p className="font-display text-xs font-semibold uppercase tracking-[0.24em] text-mint">
-                  {String(i + 1).padStart(2, "0")} — {title}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
-              </div>
+              <p className="mt-4 font-display text-sm font-bold uppercase tracking-[0.18em] text-mint">
+                {title}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
             </li>
           ))}
         </ol>
