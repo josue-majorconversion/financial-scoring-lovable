@@ -4,11 +4,15 @@ export function ValueShift() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-col items-center gap-10 text-center">
           <div className="max-w-4xl">
-            <p className="text-[0.8rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
-              <span className="block">If your answer is yes,</span>
-              <span className="block">read this closely...</span>
-            </p>
-            <h2 className="mt-4 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
+            <div className="inline-flex flex-col items-center justify-center rounded-xl border border-mint/30 bg-mint/10 px-5 py-3">
+              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
+                If your answer is yes,
+              </span>
+              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
+                read this closely...
+              </span>
+            </div>
+            <h2 className="mt-6 font-display text-3xl font-black uppercase leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
               Financial scoring helps agents close larger deals, more often.
             </h2>
           </div>
