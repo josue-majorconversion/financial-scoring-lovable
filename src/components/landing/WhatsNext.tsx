@@ -44,7 +44,7 @@ export function WhatsNext() {
       <div className="absolute inset-0 -z-10 grid-glow opacity-60" aria-hidden="true" />
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          What Happens Next
+          WHAT TO DO NEXT
         </p>
         <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
           Launch Your
