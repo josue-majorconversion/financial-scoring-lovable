@@ -14,7 +14,7 @@ export function KnowYourClient() {
             <h2 className="w-full font-display text-[clamp(1.6rem,8.4vw,2.75rem)] font-black uppercase leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
               <span className="block w-full">Could you close more</span>
               <span className="block w-full">deals if you could</span>
-              <span className="block w-full italic text-gradient-mint">see the lead's finances?</span>
+              <span className="block w-full text-gradient-mint">see the lead's finances?</span>
             </h2>
           </div>
 
