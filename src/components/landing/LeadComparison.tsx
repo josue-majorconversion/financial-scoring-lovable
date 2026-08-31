@@ -86,6 +86,15 @@ export function LeadComparison() {
             </div>
           ))}
         </div>
+
+        <div className="mt-5 flex items-start gap-3 rounded-xl border border-amber-400/20 bg-amber-400/10 p-4">
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
+          <p className="text-xs leading-relaxed text-white/70">
+            Traditional lead verification varies by provider. Financial Scoring leads are phone-verified
+            with a one-time passcode. Financial Scoring results are preliminary and based on the
+            prospect&apos;s estimates.
+          </p>
+        </div>
       </div>
     </section>
   );
