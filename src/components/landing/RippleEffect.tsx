@@ -1,4 +1,4 @@
-import { ClipboardCheck, Target, Users, TrendingUp } from "lucide-react";
+
 
 const levels = [
   {
