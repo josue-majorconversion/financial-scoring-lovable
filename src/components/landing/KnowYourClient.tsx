@@ -13,7 +13,7 @@ export function KnowYourClient() {
 
             <h2 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
               Could you close more leads and better help them if you just knew{" "}
-              <span className="text-gradient-mint">their finances?</span>
+              <span className="whitespace-nowrap text-gradient-mint">their finances?</span>
             </h2>
           </div>
 
