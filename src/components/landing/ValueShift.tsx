@@ -9,8 +9,7 @@ export function ValueShift() {
               <span className="block">read this closely...</span>
             </p>
             <h2 className="mt-4 font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
-              Financial scoring is changing the way agents{" "}
-              <span className="text-gradient-mint">buy and close leads.</span>
+              Financial scoring helps agents close larger deals, more often.
             </h2>
           </div>
 
