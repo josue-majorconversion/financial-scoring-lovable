@@ -24,7 +24,7 @@ export function Hero() {
             Revolutionizing Lead Buying
           </p>
 
-          <h1 className="w-full whitespace-nowrap font-display text-[5.5rem] font-bold uppercase leading-[0.8] sm:text-[7rem] lg:text-[9rem]">
+          <h1 className="w-full whitespace-nowrap font-display text-[5rem] font-bold uppercase leading-[0.8] sm:text-[6.5rem] lg:text-[8rem]">
             <span className="block text-[1.7em] text-[#ff3b30]">STOP</span>
             <span className="mb-2 mt-5 flex items-center justify-center gap-2 text-[0.55em] sm:mb-3 sm:mt-7 sm:gap-4 lg:mt-5">
               <span className="h-0.5 w-10 bg-white/80 sm:w-16" />
