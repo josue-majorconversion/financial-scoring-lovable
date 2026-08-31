@@ -11,10 +11,10 @@ export function KnowYourClient() {
               <span className="block w-full"><span className="underline decoration-mint underline-offset-4">YOU</span> a question...</span>
             </p>
 
-            <h2 className="font-display text-[1.65rem] font-black uppercase leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block">Could you close more</span>
-              <span className="block">deals if you can see</span>
-              <span className="block text-gradient-mint">the lead's finances?</span>
+            <h2 className="w-full font-display text-[clamp(1.6rem,8.4vw,2.75rem)] font-black uppercase leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
+              <span className="block w-full">Could you close more</span>
+              <span className="block w-full">deals if you can see</span>
+              <span className="block w-full text-gradient-mint">the lead's finances?</span>
             </h2>
           </div>
 
