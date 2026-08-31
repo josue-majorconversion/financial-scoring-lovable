@@ -13,7 +13,7 @@ const rows: { label: string; hint?: string; traditional: MarkType; scored: MarkT
   },
   { label: "Needs and financial gaps already surfaced", traditional: "no", scored: "yes" },
   { label: "Prospect has seen why help may be needed", traditional: "no", scored: "yes" },
-  { label: "Requested a conversation about the results", traditional: "no", scored: "yes" },
+  
   { label: "Recommended areas to explore first", traditional: "no", scored: "yes" },
 ];
 
