@@ -11,9 +11,9 @@ export function KnowYourClient() {
               <span className="block w-full"><span className="underline decoration-mint underline-offset-4">YOU</span> a question...</span>
             </p>
 
-            <h2 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block">Could you close</span>
-              <span className="block">more deals if you can see</span>
+            <h2 className="font-display text-[1.65rem] font-black uppercase leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
+              <span className="block">Could you close more</span>
+              <span className="block">deals if you can see</span>
               <span className="block text-gradient-mint">the lead's finances?</span>
             </h2>
           </div>
