@@ -3,25 +3,21 @@
 const levels = [
   {
     label: "01",
-    icon: ClipboardCheck,
     title: "Repeatable Sales Process",
     body: "Give every agent a clear process to use with scored leads.",
   },
   {
     label: "02",
-    icon: Target,
     title: "Faster Agent Ramp-Up",
     body: "Help new agents know where to start and what to discuss.",
   },
   {
     label: "03",
-    icon: Users,
     title: "Higher Agent Retention",
     body: "Agents who see progress have more reason to stay.",
   },
   {
     label: "04",
-    icon: TrendingUp,
     title: "Scale the Agency Faster",
     body: "Spend less time replacing producers and more time growing the team.",
   },
