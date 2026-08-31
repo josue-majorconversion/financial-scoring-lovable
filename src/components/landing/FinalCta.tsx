@@ -40,7 +40,7 @@ export function FinalCta() {
           <SkoolButton variant="outline" className="w-full sm:w-auto" />
         </div>
 
-        <p className="mt-14 font-display text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">
+        <p className="mt-14 font-display text-base font-semibold uppercase tracking-[0.28em] text-muted-foreground">
           We Don't Sell Leads
           <br />
           We Replace Them.
