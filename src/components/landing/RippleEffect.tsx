@@ -1,27 +1,23 @@
-import { ClipboardCheck, Target, Users, TrendingUp } from "lucide-react";
+
 
 const levels = [
   {
     label: "01",
-    icon: ClipboardCheck,
     title: "Repeatable Sales Process",
     body: "Give every agent a clear process to use with scored leads.",
   },
   {
     label: "02",
-    icon: Target,
     title: "Faster Agent Ramp-Up",
     body: "Help new agents know where to start and what to discuss.",
   },
   {
     label: "03",
-    icon: Users,
     title: "Higher Agent Retention",
     body: "Agents who see progress have more reason to stay.",
   },
   {
     label: "04",
-    icon: TrendingUp,
     title: "Scale the Agency Faster",
     body: "Spend less time replacing producers and more time growing the team.",
   },
@@ -53,10 +49,10 @@ export function RippleEffect() {
               <div className="rounded-2xl card-surface p-6">
                 <div className="flex items-center gap-4">
                   <div className="relative grid h-20 w-20 shrink-0 place-items-center rounded-2xl border border-mint/30 bg-mint/5 sm:h-24 sm:w-24">
-                    <l.icon size={40} strokeWidth={2} className="text-mint sm:h-11 sm:w-11" />
+                    <span className="font-display text-3xl font-bold text-mint sm:text-4xl">{l.label}</span>
                   </div>
                   <h3 className="font-display text-[1.4rem] font-bold uppercase leading-tight sm:text-[1.9rem]">
-                    {l.label} — {l.title}
+                    {l.title}
                   </h3>
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
