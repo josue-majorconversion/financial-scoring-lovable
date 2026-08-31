@@ -1,29 +1,29 @@
-import { Search, Target, Users, TrendingUp } from "lucide-react";
+import { ClipboardCheck, Target, Users, TrendingUp } from "lucide-react";
 
 const levels = [
   {
     label: "01",
-    icon: Search,
-    title: "You know the client's full truth",
-    body: "Every need and priority is on the table before you speak.",
+    icon: ClipboardCheck,
+    title: "Repeatable Sales Process",
+    body: "Give every agent a clear process to use with scored leads.",
   },
   {
     label: "02",
     icon: Target,
-    title: "New agents close sooner",
-    body: "They follow the score instead of guessing their way through calls.",
+    title: "Faster Agent Ramp-Up",
+    body: "Help new agents know where to start and what to discuss.",
   },
   {
     label: "03",
     icon: Users,
-    title: "Your agents stop quitting",
-    body: "Agents who make money and see progress stay on the team.",
+    title: "Higher Agent Retention",
+    body: "Agents who see progress have more reason to stay.",
   },
   {
     label: "04",
     icon: TrendingUp,
-    title: "Your agency keeps growing",
-    body: "More producers staying longer means more revenue every year.",
+    title: "Scale the Agency Faster",
+    body: "Spend less time replacing producers and more time growing the team.",
   },
 ];
 
@@ -32,10 +32,11 @@ export function RippleEffect() {
     <section className="relative overflow-hidden px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-4xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          The ripple effect
+          Experience scoring
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          Certainty <span className="text-gradient-mint">compounds.</span>
+          A repeatable process to{" "}
+          <span className="text-gradient-mint">scale the agency.</span>
         </h2>
 
         <ol className="relative mt-16 space-y-12 pl-6 sm:mt-20 sm:space-y-20 sm:pl-10">
@@ -55,7 +56,7 @@ export function RippleEffect() {
                     <l.icon size={40} strokeWidth={2} className="text-mint sm:h-11 sm:w-11" />
                   </div>
                   <h3 className="font-display text-[1.4rem] font-bold uppercase leading-tight sm:text-[1.9rem]">
-                    {l.title}
+                    {l.label} — {l.title}
                   </h3>
                 </div>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{l.body}</p>
@@ -66,8 +67,8 @@ export function RippleEffect() {
         </ol>
 
         <p className="mt-12 text-center font-display text-2xl font-bold uppercase leading-snug sm:text-4xl">
-          Better agents.{" "}
-          <span className="text-gradient-mint">Better agencies.</span>
+          Train faster.{" "}
+          <span className="text-gradient-mint">Retain more. Scale sooner.</span>
         </p>
       </div>
     </section>
