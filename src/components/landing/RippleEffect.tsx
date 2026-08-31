@@ -32,7 +32,6 @@ export function RippleEffect() {
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[0.95] sm:text-6xl">
           <span className="block">A REPEATABLE PROCESS TO</span>
-          <span className="block">{"\n"}</span>
           <span className="block text-gradient-mint">SCALE THE AGENCY.</span>
         </h2>
 
