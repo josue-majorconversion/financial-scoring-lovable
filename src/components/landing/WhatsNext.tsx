@@ -66,7 +66,7 @@ export function WhatsNext() {
               <span className="grid h-10 w-10 place-items-center rounded-full bg-mint font-display text-sm font-bold text-[#02090b]">
                 {i + 1}
               </span>
-              <p className="mt-4 font-display text-base font-bold uppercase tracking-[0.18em] text-white">
+              <p className="mt-4 font-display text-lg font-extrabold uppercase tracking-[0.18em] text-white sm:text-xl">
                 {title}
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
