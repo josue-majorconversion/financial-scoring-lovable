@@ -51,7 +51,7 @@ export function WhatsNext() {
           <br />
           first financial
           <br />
-          scoring offer.
+          <span className="text-gradient-mint">scoring offer.</span>
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
