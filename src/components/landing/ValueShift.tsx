@@ -13,7 +13,8 @@ export function ValueShift() {
               </span>
             </div>
             <h2 className="mt-6 font-display text-3xl font-black uppercase leading-[1.05] tracking-tight sm:text-4xl lg:text-5xl">
-              Financial scoring helps agents close larger deals, more often.
+              Financial scoring helps agents{" "}
+              <span className="text-gradient-mint">close larger deals</span>, more often.
             </h2>
           </div>
 
