@@ -16,17 +16,17 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 top-24 -z-10 h-px bg-gradient-to-r from-transparent via-mint/60 to-transparent animate-scan-down"
       />
 
-      <div className="mx-auto flex min-h-[90svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-12 sm:px-8">
-        <div className="flex flex-col items-center gap-7 text-center">
+      <div className="mx-auto flex min-h-[90svh] max-w-6xl flex-col justify-center px-5 pb-16 pt-12 sm:px-8 lg:gap-0 lg:pb-8 lg:pt-6">
+        <div className="flex flex-col items-center gap-7 text-center lg:gap-5">
           
 
           <p className="whitespace-nowrap text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-sm">
             Revolutionizing Lead Buying
           </p>
 
-          <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
+          <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-7xl">
             <span className="block text-[1.7em] text-[#ff3b30]">STOP</span>
-            <span className="mb-2 mt-5 flex items-center justify-center gap-2 text-[0.55em] sm:mb-3 sm:mt-7 sm:gap-4">
+            <span className="mb-2 mt-5 flex items-center justify-center gap-2 text-[0.55em] sm:mb-3 sm:mt-7 sm:gap-4 lg:mt-5">
               <span className="h-0.5 w-10 bg-white/80 sm:w-16" />
               Calling
               <span className="h-0.5 w-10 bg-white/80 sm:w-16" />
@@ -40,8 +40,8 @@ export function Hero() {
             </span>
           </h1>
 
-          <p className="my-6 w-full font-display font-bold uppercase tracking-[0.04em] text-foreground/90 sm:my-8">
-            <span className="block text-[2.5rem] leading-[1.2] underline decoration-mint underline-offset-4 sm:text-[3.5rem] lg:text-[4.5rem]">
+          <p className="my-6 w-full font-display font-bold uppercase tracking-[0.04em] text-foreground/90 sm:my-8 lg:my-6">
+            <span className="block text-[2.5rem] leading-[1.2] underline decoration-mint underline-offset-4 sm:text-[3.5rem] lg:text-[3rem]">
               <span className="block">Know the client</span>
               <span className="block">Before you call</span>
             </span>
@@ -59,8 +59,8 @@ export function Hero() {
                     <div className="absolute bottom-0 left-1/2 block h-px w-24 -translate-x-1/2 bg-gradient-to-r from-transparent via-white/25 to-transparent sm:hidden" />
                   </>
                 )}
-                <Icon className="h-9 w-9 shrink-0 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
-                <span className="whitespace-nowrap font-display text-lg font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl lg:text-3xl">
+                <Icon className="h-9 w-9 shrink-0 text-mint sm:h-12 sm:w-12 lg:h-9 lg:w-9" aria-hidden="true" />
+                <span className="whitespace-nowrap font-display text-lg font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl lg:text-xl">
                   {label}
                 </span>
               </li>
