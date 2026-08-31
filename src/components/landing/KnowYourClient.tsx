@@ -17,7 +17,7 @@ export function KnowYourClient() {
                 <span className="text-gradient-mint">see the leads finances…</span>
               </span>
               <span className="block w-full mb-[100px]">Would you <span className="text-gradient-mint">close more deals?…</span></span>
-              <span className="block w-full"><span className="text-gradient-mint">Bigger Deals</span> Even?</span>
+              <span className="block w-full"><span className="text-gradient-mint">Bigger Deals</span> Even?…</span>
             </h2>
           </div>
 
