@@ -77,7 +77,7 @@ export function WhatsNext() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
               {i === 0 && (
                 <div className="mt-4 w-full">
-                  <SkoolButton className="w-full" />
+                  <SkoolButton className="w-full sm:w-auto sm:whitespace-nowrap" />
                 </div>
               )}
             </li>
