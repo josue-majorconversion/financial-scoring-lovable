@@ -30,9 +30,10 @@ export function RippleEffect() {
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
           FOR AGENCY OWNERS
         </p>
-        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          A repeatable process to{" "}
-          <span className="text-gradient-mint">scale the agency.</span>
+        <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[0.95] sm:text-6xl">
+          <span className="block">A repeatable process</span>
+          <span className="block">to scale</span>
+          <span className="block text-gradient-mint">the agency.</span>
         </h2>
 
         <ol className="relative mt-16 space-y-12 pl-6 sm:mt-20 sm:space-y-20 sm:pl-10">
