@@ -65,13 +65,19 @@ export function WhatsNext() {
               <span className="grid h-10 w-10 place-items-center rounded-full bg-mint font-display text-sm font-bold text-[#02090b]">
                 {i + 1}
               </span>
-              <p className={`mt-4 font-display text-lg font-extrabold uppercase tracking-[0.18em] text-white sm:text-xl ${i === 0 ? "whitespace-nowrap" : ""}`}>
-                {title}
+              <p className="mt-4 px-3 font-display text-lg font-extrabold uppercase tracking-[0.18em] text-white sm:text-xl">
+                {i === 0 ? (
+                  <>
+                    Join the Skool<br />Community
+                  </>
+                ) : (
+                  title
+                )}
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
               {i === 0 && (
                 <div className="mt-4 w-full">
-                  <SkoolButton className="w-full" />
+                  <SkoolButton className="w-full sm:w-auto sm:whitespace-nowrap" />
                 </div>
               )}
             </li>
