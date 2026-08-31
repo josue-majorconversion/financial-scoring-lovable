@@ -6,9 +6,9 @@ export function KnowYourClient() {
       <div className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
         <div className="flex flex-col items-center gap-8 text-center">
           <div className="flex flex-col items-center gap-3">
-            <p className="mb-[50px] font-display text-3xl font-black uppercase leading-[1.05] text-mint sm:text-5xl lg:text-6xl">
-              <span className="block">Let Me Ask</span>
-              <span className="block"><span className="underline decoration-mint underline-offset-4">YOU</span> a question...</span>
+            <p className="mb-[50px] w-full font-display text-4xl font-black uppercase leading-[1.05] text-mint sm:text-6xl lg:text-8xl">
+              <span className="block w-full">Let Me Ask</span>
+              <span className="block w-full"><span className="underline decoration-mint underline-offset-4">YOU</span> a question...</span>
             </p>
 
             <h2 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
