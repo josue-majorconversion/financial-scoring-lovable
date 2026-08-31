@@ -42,7 +42,7 @@ export function LeadComparison() {
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <h2 className="font-display text-4xl font-black uppercase leading-[0.9] tracking-tight sm:text-6xl">
             A Lead With A<br />
             <span className="text-gradient-mint">Reason.</span>
