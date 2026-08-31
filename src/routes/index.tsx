@@ -59,7 +59,6 @@ function Index() {
         <DashboardPreview />
         <VideoTestimonials />
         <WhatsNext />
-        <FinalCta />
         <Footer />
       </main>
       </div>
