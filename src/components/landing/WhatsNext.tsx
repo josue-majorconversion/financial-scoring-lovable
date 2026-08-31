@@ -1,11 +1,23 @@
 import { toast } from "sonner";
-import { Users, Mail, Gauge } from "lucide-react";
+import { Users, CircleUser, Share2 } from "lucide-react";
 import { Cta } from "./Cta";
 
 const steps = [
-  { icon: Users, title: "Join the Skool community" },
-  { icon: Mail, title: "Access your free account via email" },
-  { icon: Gauge, title: "Send out to clients" },
+  {
+    icon: Users,
+    title: "Join the Community",
+    body: "Get training, examples, and a clear rollout path.",
+  },
+  {
+    icon: CircleUser,
+    title: "Open Your Account",
+    body: "Access your agent dashboard and scoring tools.",
+  },
+  {
+    icon: Share2,
+    title: "Share the Free Offer",
+    body: "Invite prospects to get their Financial Score.",
+  },
 ];
 
 export function SkoolButton({
@@ -39,11 +51,17 @@ export function WhatsNext() {
           What&rsquo;s next
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
-          Next <span className="text-gradient-mint">Steps</span>
+          Launch your first{" "}
+          <span className="text-gradient-mint">Financial Scoring offer.</span>
         </h2>
 
+        <p className="mx-auto mt-6 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+          Get access, share the free service, and let the score give your next conversation a
+          better place to start.
+        </p>
+
         <ol className="mt-10 grid gap-4 sm:grid-cols-3">
-          {steps.map(({ icon: Icon, title }, i) => (
+          {steps.map(({ icon: Icon, title, body }, i) => (
             <li
               key={title}
               className="flex items-center gap-4 rounded-2xl card-surface p-5 sm:flex-col sm:text-center"
@@ -53,11 +71,9 @@ export function WhatsNext() {
               </span>
               <div className="min-w-0">
                 <p className="font-display text-xs font-semibold uppercase tracking-[0.24em] text-mint">
-                  Step {i + 1}
+                  {String(i + 1).padStart(2, "0")} — {title}
                 </p>
-                <p className="mt-1 font-display text-xl font-bold uppercase leading-tight">
-                  {title}
-                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
               </div>
             </li>
           ))}
@@ -66,6 +82,11 @@ export function WhatsNext() {
         <div className="mt-10 flex justify-center">
           <SkoolButton className="w-full sm:w-auto" />
         </div>
+
+        <p className="mt-12 text-center font-display text-2xl font-bold uppercase leading-snug sm:text-4xl">
+          The next era of{" "}
+          <span className="text-gradient-mint">prospecting.</span>
+        </p>
       </div>
     </section>
   );
