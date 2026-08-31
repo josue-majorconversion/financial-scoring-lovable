@@ -42,9 +42,10 @@ export function HowItWorks() {
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-        <h2 className="text-center font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl">
+        <h2 className="text-center font-display text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           Here's How <span className="text-gradient-mint">It Works.</span>
         </h2>
+
 
         <div className="mt-10 grid gap-5 sm:mt-14 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (

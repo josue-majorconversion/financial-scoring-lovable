@@ -6,11 +6,11 @@ export function KnowYourClient() {
       <div className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
         <div className="flex flex-col items-center gap-8 text-center">
           <div className="flex flex-col items-center gap-3">
-            <p className="whitespace-nowrap font-display text-2xl font-black uppercase leading-none text-mint sm:text-5xl lg:text-6xl">
+            <p className="whitespace-nowrap font-display text-xl font-black uppercase leading-none text-mint sm:text-4xl lg:text-5xl">
               Let me ask you a question.
             </p>
 
-            <h2 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
+            <h2 className="font-display text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
               Could you close more leads and better help them if you just knew{" "}
               <span className="text-gradient-mint">their finances?</span>
             </h2>
@@ -33,3 +33,4 @@ export function KnowYourClient() {
     </section>
   );
 }
+
