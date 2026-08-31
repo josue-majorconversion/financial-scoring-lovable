@@ -11,6 +11,10 @@ import {
   PhoneOff,
   Crown,
   HeartHandshake,
+  Target,
+  TrendingUp,
+  Award,
+  ClipboardCheck,
 } from "lucide-react";
 
 type Variant =
@@ -31,7 +35,15 @@ type Variant =
   | "taxes"
   | "am-i-okay"
   | "attention"
-  | "hidden-gaps";
+  | "hidden-gaps"
+  | "close-more-deals"
+  | "earn-more-per-deal"
+  | "make-fewer-calls"
+  | "help-clients-more"
+  | "real-problem"
+  | "stand-out"
+  | "new-agents"
+  | "call-context";
 
 const bars = [34, 52, 70, 92];
 
@@ -193,6 +205,69 @@ export function BenefitVisual({ variant, className = "" }: { variant: Variant; c
       {variant === "bad-day" ? (
         <IconFrame>
           <ShieldAlert size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Close more deals — target / bullseye */}
+      {variant === "close-more-deals" ? (
+        <IconFrame>
+          <Target size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Earn more per deal — dollar trending up */}
+      {variant === "earn-more-per-deal" ? (
+        <IconFrame>
+          <div className="relative grid h-16 w-16 place-items-center">
+            <DollarSign className="text-mint" size={48} strokeWidth={2.5} />
+            <TrendingUp
+              className="absolute -bottom-1 -right-1 text-mint"
+              size={28}
+              strokeWidth={3}
+            />
+          </div>
+        </IconFrame>
+      ) : null}
+
+      {/* Make fewer calls — phone off */}
+      {variant === "make-fewer-calls" ? (
+        <IconFrame pulse={false}>
+          <PhoneOff size={60} strokeWidth={2.4} />
+        </IconFrame>
+      ) : null}
+
+      {/* Help clients more — heart handshake */}
+      {variant === "help-clients-more" ? (
+        <IconFrame pulse={false}>
+          <HeartHandshake size={62} strokeWidth={2.2} />
+        </IconFrame>
+      ) : null}
+
+      {/* Stop missing the real problem — puzzle piece */}
+      {variant === "real-problem" ? (
+        <IconFrame>
+          <PuzzleIcon size={60} strokeWidth={2.4} />
+        </IconFrame>
+      ) : null}
+
+      {/* Don't sound like every other agent — award / crown */}
+      {variant === "stand-out" ? (
+        <IconFrame>
+          <Award size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Stop letting new agents wing it — flag / finish line */}
+      {variant === "new-agents" ? (
+        <IconFrame>
+          <Flag size={62} strokeWidth={2.3} />
+        </IconFrame>
+      ) : null}
+
+      {/* Stop starting every call from zero — clipboard check / eye */}
+      {variant === "call-context" ? (
+        <IconFrame>
+          <ClipboardCheck size={62} strokeWidth={2.3} />
         </IconFrame>
       ) : null}
     </div>
