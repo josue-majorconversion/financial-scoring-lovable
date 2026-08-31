@@ -6,8 +6,8 @@ export function KnowYourClient() {
       <div className="mx-auto max-w-6xl px-5 pb-16 sm:px-8 sm:pb-24">
         <div className="flex flex-col items-center gap-8 text-center">
           <div className="flex flex-col items-center gap-3">
-            <p className="whitespace-nowrap font-display text-xl font-black uppercase leading-none text-mint sm:text-4xl lg:text-5xl">
-              Let me ask you a question.
+            <p className="mb-2 whitespace-nowrap font-display text-xl font-black uppercase leading-none text-mint sm:text-4xl lg:text-5xl">
+              Let me ask you a question...
             </p>
 
             <h2 className="font-display text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
