@@ -12,8 +12,9 @@ export function KnowYourClient() {
             </p>
 
             <h2 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl lg:text-6xl">
-              Could you close bigger deals more often if you knew the lead’s{" "}
-              <span className="whitespace-nowrap text-gradient-mint">finances?</span>
+              <span className="block">Could you close</span>
+              <span className="block">more deals if you can see</span>
+              <span className="block text-gradient-mint">the lead's finances?</span>
             </h2>
           </div>
 
