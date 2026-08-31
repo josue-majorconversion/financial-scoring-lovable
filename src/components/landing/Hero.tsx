@@ -60,9 +60,8 @@ export function Hero() {
                   </>
                 )}
                 <Icon className="h-9 w-9 shrink-0 text-mint sm:h-12 sm:w-12" aria-hidden="true" />
-                <span className="font-display text-base font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl">
-                  <span className="inline sm:block">{lines[0]}</span>{' '}
-                  <span className="inline sm:block">{lines[1]}</span>
+                <span className="whitespace-nowrap font-display text-lg font-bold uppercase leading-tight tracking-[0.04em] sm:text-2xl lg:text-3xl">
+                  {label}
                 </span>
               </li>
             ))}
