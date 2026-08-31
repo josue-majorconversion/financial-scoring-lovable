@@ -4,11 +4,11 @@ export function ValueShift() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <div className="flex flex-col items-center gap-10 text-center">
           <div className="max-w-4xl">
-            <div className="inline-flex flex-col items-center justify-center rounded-xl border border-mint/30 bg-mint/10 px-5 py-3">
-              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
+            <div className="inline-flex flex-col items-center justify-center rounded-xl border border-mint/30 bg-mint/10 px-5 py-3 lg:flex-row lg:gap-2">
+              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs lg:text-sm">
                 If your answer is yes,
               </span>
-              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
+              <span className="block text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs lg:text-sm">
                 read this closely...
               </span>
             </div>
