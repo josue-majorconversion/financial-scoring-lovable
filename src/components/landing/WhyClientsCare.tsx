@@ -8,7 +8,7 @@ const primary = [
     visual: "clarity" as const,
   },
   {
-    title: "Know What to Fix First",
+    title: "Identify What to Fix First",
     body: "See which areas may need attention now - and why.",
     visual: "close-more-deals" as const,
   },
