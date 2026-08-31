@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { BenefitVisual } from "./BenefitVisual";
 import { Reveal } from "./Reveal";
-import { Cta } from "./Cta";
 
 const primary = [
   {
@@ -26,32 +24,8 @@ const primary = [
   },
 ];
 
-const more = [
-  {
-    title: "Stop Missing the Real Problem",
-    body: "Ask questions tied to the client's full financial picture instead of guessing what matters most.",
-    visual: "real-problem" as const,
-  },
-  {
-    title: "Don't Sound Like Every Other Agent",
-    body: "Bring a structured scoring process into the conversation instead of another generic product pitch.",
-    visual: "stand-out" as const,
-  },
-  {
-    title: "Stop Letting New Agents Wing It",
-    body: "Give newer agents a repeatable process so they know what to ask and what to look for.",
-    visual: "new-agents" as const,
-  },
-  {
-    title: "Stop Starting Every Call From Zero",
-    body: "Walk into the conversation with more context and a clearer idea of where the needs may be.",
-    visual: "call-context" as const,
-  },
-];
 
 export function WhyAgentsCare() {
-  const [open, setOpen] = useState(false);
-
   return (
     <section className="border-y border-border/60 bg-surface/40 px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
@@ -74,33 +48,6 @@ export function WhyAgentsCare() {
               </article>
             </Reveal>
           ))}
-        </div>
-
-        {open ? (
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {more.map((c, i) => (
-              <Reveal key={c.title} delay={i * 70}>
-                <article className="h-full rounded-3xl card-surface p-5 text-center">
-                  <BenefitVisual variant={c.visual} />
-                  <h3 className="mt-5 font-display text-xl font-bold uppercase sm:text-2xl">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        ) : null}
-
-        <div className="mt-8 flex justify-center">
-          <Cta
-            variant="outline"
-            className="w-full sm:w-auto"
-            onClick={() => setOpen((v) => !v)}
-            ariaLabel={open ? "Show fewer benefits" : "See all benefits"}
-          >
-            {open ? "Show less" : "See all benefits"}
-          </Cta>
         </div>
       </div>
     </section>
