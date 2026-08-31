@@ -41,7 +41,7 @@ export function Hero() {
           </h1>
 
           <p className="my-6 w-full font-display font-bold uppercase tracking-[0.04em] text-foreground/90 sm:my-8">
-            <span className="block text-[2.5rem] leading-[1.05] underline decoration-mint underline-offset-4 sm:text-[3.5rem] lg:text-[4.5rem]">
+            <span className="block text-[2.5rem] leading-[1.2] underline decoration-mint underline-offset-4 sm:text-[3.5rem] lg:text-[4.5rem]">
               <span className="block">Know the client</span>
               <span className="block">Before you call</span>
             </span>
