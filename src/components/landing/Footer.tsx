@@ -9,11 +9,6 @@ export function Footer() {
           Financial Scoring results are preliminary, based on user-provided estimates, and are not
           investment advice. This prototype uses fictional data and placeholder CTA destinations.
         </p>
-        <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
-          <span className="text-muted-foreground">Privacy Policy — coming soon</span>
-          <span className="text-muted-foreground">Terms — coming soon</span>
-          <span className="text-muted-foreground">Contact — coming soon</span>
-        </nav>
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Financial Scoring. All rights reserved.
         </p>
