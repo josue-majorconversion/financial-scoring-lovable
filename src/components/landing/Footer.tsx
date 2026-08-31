@@ -5,7 +5,10 @@ export function Footer() {
     <footer className="border-t border-border/60 px-5 py-12 sm:px-8">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
         <Logo className="h-10" />
-        <p className="text-sm text-muted-foreground">We don’t sell leads. We replace them.</p>
+        <p className="text-sm text-muted-foreground">
+          Financial Scoring results are preliminary, based on user-provided estimates, and are not
+          investment advice. This prototype uses fictional data and placeholder CTA destinations.
+        </p>
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
           <span className="text-muted-foreground">Privacy Policy — coming soon</span>
           <span className="text-muted-foreground">Terms — coming soon</span>
