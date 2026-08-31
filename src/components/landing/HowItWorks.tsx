@@ -1,3 +1,5 @@
+import scoreGauge from "@/assets/score-gauge.png.asset.json";
+
 const steps = [
   {
     num: "01",
@@ -85,28 +87,11 @@ export function HowItWorks() {
 
               {step.score ? (
                 <div className="mt-6 flex flex-col items-center">
-                  <svg viewBox="0 0 120 120" className="h-28 w-28" aria-hidden="true">
-                    {/* colored arc segments */}
-                    <circle cx="60" cy="60" r="52" fill="none" stroke="#22c55e" strokeWidth="9"
-                      strokeDasharray="90 400" strokeDashoffset="326" strokeLinecap="round" />
-                    <circle cx="60" cy="60" r="52" fill="none" stroke="#f59e0b" strokeWidth="9"
-                      strokeDasharray="90 400" strokeDashoffset="236" strokeLinecap="round" />
-                    <circle cx="60" cy="60" r="52" fill="none" stroke="#ef4444" strokeWidth="9"
-                      strokeDasharray="140 400" strokeDashoffset="96" strokeLinecap="round" />
-                    {/* dark inner disc */}
-                    <circle cx="60" cy="60" r="45" fill="#0d3f3d" />
-                    {/* needle pointing at green zone */}
-                    <g transform="rotate(218 60 60)">
-                      <rect x="42" y="55.5" width="22" height="9" rx="4.5" fill="#02090b" stroke="#fff" strokeWidth="2" />
-                    </g>
-                    {/* score text */}
-                    <text x="60" y="64" textAnchor="middle" fill="#fff" fontSize="34" fontWeight="900" fontFamily="Oswald, sans-serif">
-                      {step.score}
-                    </text>
-                    <text x="60" y="82" textAnchor="middle" fill="rgba(255,255,255,0.7)" fontSize="13" fontWeight="700" fontStyle="italic" fontFamily="Oswald, sans-serif">
-                      /100
-                    </text>
-                  </svg>
+                  <img
+                    src={scoreGauge.url}
+                    alt={`Financial score gauge showing ${step.score} out of 100`}
+                    className="h-28 w-auto"
+                  />
                   <p className="mt-3 text-[10px] uppercase tracking-[0.25em] text-white/40">
                     Illustrative score
                   </p>
