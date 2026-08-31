@@ -10,11 +10,10 @@ export function DashboardPreview() {
           eyebrow="Inside the platform"
           title={
             <span className="block">
-              <span className="block">Here&rsquo;s what you&rsquo;ll see</span>
-              <span className="block text-mint">in your dashboard</span>
+              Know the score. Know the next call.
             </span>
           }
-          subtitle="A quick look at scores, insights, and next steps — all in one place."
+          subtitle="Scored leads, conversation requests, key concerns, and follow-up status stay together in one simple workflow."
           className="text-[28px] sm:text-[35.5px]"
         />
 
