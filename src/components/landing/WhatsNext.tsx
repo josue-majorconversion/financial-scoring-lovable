@@ -7,8 +7,8 @@ const steps = [
     body: "Get training, examples, and a clear rollout path.",
   },
   {
-    title: "Open Your Account",
-    body: "Access your agent dashboard and scoring tools.",
+    title: "LOG IN TO YOUR ACCOUNT",
+    body: "You should have received an email from us already with your login details to access your agent dashboard and scoring tools.",
   },
   {
     title: "Share the Free Offer",
