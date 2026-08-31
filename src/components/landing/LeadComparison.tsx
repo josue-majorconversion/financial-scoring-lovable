@@ -1,8 +1,8 @@
 import { Check, X, AlertTriangle } from "lucide-react";
 
-type Mark = "yes" | "no" | "warn";
+type MarkType = "yes" | "no" | "warn";
 
-const rows: { label: string; hint?: string; traditional: Mark; scored: Mark }[] = [
+const rows: { label: string; hint?: string; traditional: MarkType; scored: MarkType }[] = [
   { label: "Name and contact details", traditional: "yes", scored: "yes" },
   { label: "Phone verified by one-time passcode", traditional: "warn", scored: "yes" },
   {
@@ -16,7 +16,7 @@ const rows: { label: string; hint?: string; traditional: Mark; scored: Mark }[] 
   { label: "Requested a conversation about the results", traditional: "no", scored: "yes" },
 ];
 
-function Mark({ type }: { type: Mark }) {
+function Mark({ type }: { type: MarkType }) {
   if (type === "yes")
     return (
       <span className="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-[#22c55e]">
