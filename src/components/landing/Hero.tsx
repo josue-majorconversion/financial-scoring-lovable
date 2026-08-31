@@ -20,8 +20,8 @@ export function Hero() {
         <div className="flex flex-col items-center gap-7 text-center">
           
 
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-xs">
-            Revolutionizing Traditional Lead Buying
+          <p className="whitespace-nowrap text-[0.75rem] font-semibold uppercase tracking-[0.3em] text-mint sm:text-sm">
+            Revolutionizing Lead Buying
           </p>
 
           <h1 className="w-full whitespace-nowrap font-display text-7xl font-bold uppercase leading-[0.85] sm:text-8xl lg:text-9xl">
