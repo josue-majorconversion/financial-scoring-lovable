@@ -78,10 +78,6 @@ export function WhatsNext() {
           <SkoolButton className="w-full sm:w-auto" />
         </div>
 
-        <p className="mt-12 text-center font-display text-2xl font-bold uppercase leading-snug sm:text-4xl">
-          The next era of{" "}
-          <span className="text-gradient-mint">prospecting.</span>
-        </p>
       </div>
     </section>
   );
