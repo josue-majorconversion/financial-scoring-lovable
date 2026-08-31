@@ -3,7 +3,7 @@ import { Cta } from "./Cta";
 
 const steps = [
   {
-    title: "Join the Community",
+    title: "Join the Skool Community",
     body: "Get training, examples, and a clear rollout path.",
   },
   {
