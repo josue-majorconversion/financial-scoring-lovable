@@ -18,7 +18,7 @@ const primary = [
     visual: "retirement" as const,
   },
   {
-    title: "Find the Gaps Before Life Does",
+    title: "SIMPLE TO UNDERSTAND",
     body: "Spot weak points before a major life change puts the plan to the test.",
     visual: "bad-day" as const,
   },
