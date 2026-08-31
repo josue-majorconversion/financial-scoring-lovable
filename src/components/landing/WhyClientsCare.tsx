@@ -30,10 +30,10 @@ export function WhyClientsCare() {
     <section id="why-clients" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          Why Clients care
+          Why Leads Care
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-4xl font-bold uppercase leading-[0.95] sm:text-6xl">
-          Answers to the questions <span className="text-mint">that matter most.</span>
+          A Better Client Experience
         </h2>
         <p className="mx-auto mt-4 max-w-md text-center text-base font-bold text-muted-foreground sm:text-lg">
           One Financial Score helps turn a confusing financial picture into a clear place to start.
