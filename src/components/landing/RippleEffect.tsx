@@ -28,7 +28,7 @@ export function RippleEffect() {
     <section className="relative overflow-hidden px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-4xl">
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
-          Experience scoring
+          FOR AGENCY OWNERS
         </p>
         <h2 className="mx-auto mt-4 max-w-3xl text-center font-display text-5xl font-bold uppercase leading-[0.95] sm:text-7xl">
           A repeatable process to{" "}
