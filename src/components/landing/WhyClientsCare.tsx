@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { BenefitVisual } from "./BenefitVisual";
 import { Reveal } from "./Reveal";
-import { Cta } from "./Cta";
 
 const primary = [
   {
@@ -26,32 +24,8 @@ const primary = [
   },
 ];
 
-const more = [
-  {
-    title: "Don't let taxes surprise you",
-    body: "See whether your current financial picture is built with tax efficiency in mind.",
-    visual: "leaving-money" as const,
-  },
-  {
-    title: 'Stop wondering "Am I okay?"',
-    body: "Turn a pile of accounts and policies into one clearer financial picture.",
-    visual: "question" as const,
-  },
-  {
-    title: "See what needs attention first",
-    body: "Know where the biggest gaps are before trying to fix everything at once.",
-    visual: "real-problem" as const,
-  },
-  {
-    title: "Find the hidden gaps",
-    body: "See what may be missing across retirement, taxes, risk, and protection.",
-    visual: "puzzle" as const,
-  },
-];
 
 export function WhyClientsCare() {
-  const [open, setOpen] = useState(false);
-
   return (
     <section id="why-clients" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-5xl">
@@ -77,33 +51,6 @@ export function WhyClientsCare() {
               </article>
             </Reveal>
           ))}
-        </div>
-
-        {open ? (
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {more.map((c, i) => (
-              <Reveal key={c.title} delay={i * 70}>
-              <article className="h-full rounded-3xl card-surface p-5 text-center">
-                <BenefitVisual variant={c.visual} />
-                <h3 className="mt-5 font-display text-xl font-bold uppercase sm:text-2xl">
-                  {c.title}
-                </h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.body}</p>
-              </article>
-              </Reveal>
-            ))}
-          </div>
-        ) : null}
-
-        <div className="mt-8 flex justify-center">
-          <Cta
-            variant="outline"
-            className="w-full sm:w-auto"
-            onClick={() => setOpen((v) => !v)}
-            ariaLabel={open ? "Show fewer benefits" : "See all benefits"}
-          >
-            {open ? "Show less" : "See all benefits"}
-          </Cta>
         </div>
       </div>
     </section>
