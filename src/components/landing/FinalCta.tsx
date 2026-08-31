@@ -41,7 +41,9 @@ export function FinalCta() {
         </div>
 
         <p className="mt-14 font-display text-sm font-semibold uppercase tracking-[0.28em] text-muted-foreground">
-          We don’t sell leads. We replace them.
+          We Don't Sell Leads
+          <br />
+          We Replace Them.
         </p>
       </div>
     </section>
