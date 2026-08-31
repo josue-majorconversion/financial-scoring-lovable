@@ -2,8 +2,8 @@ export function ValueShift() {
   return (
     <section className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
-        <div className="flex flex-col items-center gap-10 text-center lg:flex-row lg:items-center lg:gap-14 lg:text-left">
-          <div className="flex-1">
+        <div className="flex flex-col items-center gap-10 text-center">
+          <div className="max-w-4xl">
             <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
               If your answer is yes, read this closely...
             </p>
@@ -13,7 +13,7 @@ export function ValueShift() {
             </h2>
           </div>
 
-          <div className="w-full flex-1">
+          <div className="w-full">
             <div className="relative w-full overflow-hidden rounded-2xl border border-border bg-[#02090b] p-4 sm:p-6 glow-mint">
               <div className="mb-4 flex items-center gap-2">
                 <span className="h-4 w-1 rounded-full bg-mint" />
@@ -74,17 +74,17 @@ export function ValueShift() {
 
                 {/* red */}
                 <path
-                  d="M0 190 C80 186 140 184 200 182 C270 180 330 179 400 178 L400 200 L0 200 Z"
+                  d="M0 188 C40 185 60 165 90 170 C130 178 150 155 190 162 C230 170 260 140 300 150 C340 160 370 135 400 142 L400 200 L0 200 Z"
                   fill="url(#vsRedFill)"
                 />
                 <path
-                  d="M0 190 C80 186 140 184 200 182 C270 180 330 179 400 178"
+                  d="M0 188 C40 185 60 165 90 170 C130 178 150 155 190 162 C230 170 260 140 300 150 C340 160 370 135 400 142"
                   fill="none"
                   stroke="#ef4444"
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
-                <circle cx="396" cy="178" r="5" fill="#ef4444" />
+                <circle cx="396" cy="142" r="5" fill="#ef4444" />
 
                 <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(255,255,255,0.14)" strokeWidth="1.5" />
               </svg>
@@ -124,3 +124,4 @@ export function ValueShift() {
     </section>
   );
 }
+
