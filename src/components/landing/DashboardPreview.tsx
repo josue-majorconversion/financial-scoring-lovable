@@ -8,13 +8,13 @@ export function DashboardPreview() {
       <div className="mx-auto max-w-4xl">
         <SectionHeading
           eyebrow="Inside the platform"
-          title={
+        title={
             <span className="block">
-              Know the score. Know the next call.
+              Know the score. <span className="text-mint">Know the next call.</span>
             </span>
           }
           subtitle="Scored leads, conversation requests, key concerns, and follow-up status stay together in one simple workflow."
-          className="text-[28px] sm:text-[35.5px]"
+          className="text-[40px] sm:text-[60px]"
         />
 
 
