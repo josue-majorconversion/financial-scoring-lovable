@@ -24,7 +24,7 @@ export function KnowYourClient() {
                 className="w-full rounded-xl"
               />
             </div>
-            <p className="mt-4 inline-block text-left text-xs italic leading-relaxed text-white/70 sm:text-sm">
+            <p className="mt-4 text-center text-xs italic leading-relaxed text-white/70 sm:text-sm">
               Real FinancialScoring.AI Proprietary Lead Data displaying a potential IUL Sale Opportunity
             </p>
           </div>
