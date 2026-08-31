@@ -19,7 +19,7 @@ const primary = [
   },
   {
     title: "SIMPLE TO UNDERSTAND",
-    body: "Spot weak points before a major life change puts the plan to the test.",
+    body: "Easily understand different areas of retirement, which may need improvement.",
     visual: "bad-day" as const,
   },
 ];
