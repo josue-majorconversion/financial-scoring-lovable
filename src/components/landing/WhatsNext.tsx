@@ -107,7 +107,7 @@ export function WhatsNext() {
         <div className="mt-10 rounded-2xl border border-mint/50 bg-[#071417]/80 p-6 shadow-[0_0_40px_-20px_rgba(0,199,212,0.35)] sm:p-10">
           <div className="flex flex-col items-center text-center">
             <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
-              EVENT-ONLY FFL PRICING
+              EVENT-ONLY FFL IGNYTE PRICING
             </span>
             <h3 className="mt-4 font-display text-[2.75rem] font-bold uppercase leading-[0.95] text-white sm:text-6xl">
               LOCK IN YOUR FFL DISCOUNT<br />BEFORE THE EVENT ENDS
