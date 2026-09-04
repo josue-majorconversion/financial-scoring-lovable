@@ -106,11 +106,14 @@ export function WhatsNext() {
 
         <div className="mt-10 rounded-2xl border border-mint/50 bg-[#071417]/80 p-6 shadow-[0_0_40px_-20px_rgba(0,199,212,0.35)] sm:p-10">
           <div className="flex flex-col items-center text-center">
-            <h3 className="font-display text-3xl font-bold uppercase leading-[0.95] text-white sm:text-5xl">
-              READY TO GO ALL IN?
+            <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
+              EVENT-ONLY FLL PRICING
+            </span>
+            <h3 className="mt-4 font-display text-3xl font-bold uppercase leading-[0.95] text-white sm:text-5xl">
+              LOCK IN YOUR FLL DISCOUNT BEFORE THE EVENT ENDS
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              If you already know Financial Scoring is right for you, skip the free path and lock in full agent access at our event pricing.
+              Get full Financial Scoring access at a special event-only rate. This pricing is available here for a limited time and will not be the standard rate after the event.
             </p>
           </div>
 
