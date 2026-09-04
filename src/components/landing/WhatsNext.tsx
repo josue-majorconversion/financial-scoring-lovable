@@ -131,9 +131,6 @@ export function WhatsNext() {
                   <span className="font-display text-5xl font-black text-mint sm:text-6xl">$949</span>
                   <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
                 </div>
-                <span className="rounded-full bg-mint/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-mint">
-                  SAVE MORE AT THE EVENT
-                </span>
               </div>
             </div>
           </div>
