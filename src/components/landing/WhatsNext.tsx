@@ -163,10 +163,20 @@ export function WhatsNext() {
 
           <div className="mt-10 flex flex-col items-center gap-3">
             <Cta variant="primary" className="w-full sm:w-auto">
-              LOCK IN MY DISCOUNTED EVENT RATE
+              <span>LOCK IN MY DISCOUNTED EVENT RATE</span>
+              <svg
+                className="h-4 w-4 shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </Cta>
             <p className="text-xs text-muted-foreground">
-              Choose monthly or save with annual access.
+              Your event discount disappears when the event ends.
             </p>
           </div>
         </div>
