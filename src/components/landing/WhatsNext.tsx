@@ -98,7 +98,7 @@ export function WhatsNext() {
 
         <div className="mt-10 flex items-center justify-center gap-4">
           <span className="h-px flex-1 max-w-[140px] bg-gradient-to-r from-transparent to-mint/40" />
-          <span className="font-display text-[100px] font-semibold uppercase leading-none tracking-[0.25em] text-mint">
+          <span className="font-display text-[100px] font-semibold uppercase leading-none tracking-[-0.08em] text-mint">
             OR
           </span>
           <span className="h-px flex-1 max-w-[140px] bg-gradient-to-l from-transparent to-mint/40" />
