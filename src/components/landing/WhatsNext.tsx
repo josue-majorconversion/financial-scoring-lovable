@@ -132,11 +132,15 @@ export function WhatsNext() {
                   <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
                 </div>
                 <span className="rounded-full bg-mint/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-mint">
-                  BEST VALUE
+                  SAVE MORE AT THE EVENT
                 </span>
               </div>
             </div>
           </div>
+
+          <p className="mt-4 text-center text-sm font-semibold uppercase tracking-[0.2em] text-mint">
+            Event pricing is available for a limited time only.
+          </p>
 
           <div className="mt-10">
             <p className="text-center font-display text-sm font-semibold uppercase tracking-[0.2em] text-white">
@@ -162,7 +166,7 @@ export function WhatsNext() {
 
           <div className="mt-10 flex flex-col items-center gap-3">
             <Cta variant="primary" className="w-full sm:w-auto">
-              GET FULL ACCESS AT EVENT PRICING
+              LOCK IN MY FLL EVENT RATE
             </Cta>
             <p className="text-xs text-muted-foreground">
               Choose monthly or save with annual access.
