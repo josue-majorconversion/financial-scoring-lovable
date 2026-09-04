@@ -125,7 +125,7 @@ export function WhatsNext() {
           <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
             <div className="flex flex-col items-center justify-end">
               <div className="flex items-baseline gap-1">
-                <span className="font-display text-5xl font-black text-white sm:text-6xl">$129</span>
+                <span className="font-display text-6xl font-black text-white sm:text-7xl">$129</span>
                 <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ MONTH</span>
               </div>
             </div>
@@ -133,7 +133,7 @@ export function WhatsNext() {
             <div className="flex flex-col items-center justify-end">
               <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1">
                 <div className="flex items-baseline gap-1">
-                  <span className="font-display text-5xl font-black text-mint sm:text-6xl">$949</span>
+                  <span className="font-display text-6xl font-black text-mint sm:text-7xl">$949</span>
                   <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
                 </div>
               </div>
