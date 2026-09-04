@@ -14,19 +14,21 @@ function Card({ id, category }: { id: string; category: string }) {
         <button
           type="button"
           disabled
-          aria-label={`${id} — video placeholder, not yet available`}
+          aria-label={`${id} — video not yet available`}
           className="absolute inset-0 grid place-items-center"
         >
           <span className="grid h-16 w-16 place-items-center rounded-full border border-mint/50 bg-background/70">
             <Play className="h-6 w-6 text-mint" aria-hidden="true" />
           </span>
         </button>
-        <span className="absolute left-3 top-3 rounded-full border border-border bg-background/80 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          Placeholder
-        </span>
       </div>
       <div className="mt-5 flex flex-1 flex-col items-center text-center">
-        <p className="font-display text-xl font-bold uppercase tracking-[0.04em]">{id}</p>
+        <div className="flex gap-0.5 text-mint" aria-label="5 out of 5 stars">
+          {"★★★★★".split("").map((star, i) => (
+            <span key={i}>{star}</span>
+          ))}
+        </div>
+        <p className="mt-2 font-display text-xl font-bold uppercase tracking-[0.04em]">“{id}”</p>
         <p className="mt-1 text-xs uppercase tracking-[0.18em] text-mint">{category}</p>
       </div>
     </article>
