@@ -110,7 +110,12 @@ export function WhatsNext() {
               EVENT-ONLY FFL IGNYTE PRICING
             </span>
             <h3 className="mt-4 font-display text-[2.75rem] font-bold uppercase leading-[0.95] text-white sm:text-6xl">
-              LOCK IN YOUR DISCOUNTED RATE<br />BEFORE THE EVENT ENDS
+              <span className="sm:hidden">
+                LOCK IN YOUR<br />DISCOUNTED<br />RATE BEFORE<br />THE EVENT ENDS
+              </span>
+              <span className="hidden sm:inline">
+                LOCK IN YOUR DISCOUNTED RATE<br />BEFORE THE EVENT ENDS
+              </span>
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Get full Financial Scoring access at a special event-only rate. This pricing is available here for a limited time and will not be the standard rate after the event.
