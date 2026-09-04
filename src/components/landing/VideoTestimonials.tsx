@@ -4,6 +4,7 @@ const placeholders = [
   { id: "Agent Testimonial 01", category: "Better discovery" },
   { id: "Agent Testimonial 02", category: "Greater confidence" },
   { id: "Agent Testimonial 03", category: "Stronger opportunities" },
+  { id: "Agent Testimonial 04", category: "Faster closes" },
 ];
 
 function Card({ id, category }: { id: string; category: string }) {
