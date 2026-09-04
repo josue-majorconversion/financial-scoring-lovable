@@ -176,7 +176,7 @@ export function WhatsNext() {
               </svg>
             </Cta>
             <p className="text-xs text-muted-foreground">
-              Your event discount disappears when the event ends.
+              Event Pricing Ends September 10th. This price may not appear again.&nbsp;
             </p>
           </div>
         </div>
