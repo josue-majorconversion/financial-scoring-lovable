@@ -163,7 +163,7 @@ export function WhatsNext() {
 
           <div className="mt-10 flex flex-col items-center gap-3">
             <Cta variant="primary" className="w-full sm:w-auto">
-              LOCK IN MY FFL EVENT RATE
+              LOCK IN MY DISCOUNTED EVENT RATE
             </Cta>
             <p className="text-xs text-muted-foreground">
               Choose monthly or save with annual access.
