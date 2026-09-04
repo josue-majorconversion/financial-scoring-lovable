@@ -23,7 +23,7 @@ function Card({ id, category }: { id: string; category: string }) {
         </button>
       </div>
       <div className="mt-5 flex flex-1 flex-col items-center text-center">
-        <div className="flex gap-0.5 text-mint" aria-label="5 out of 5 stars">
+        <div className="flex gap-0.5 text-2xl text-mint" aria-label="5 out of 5 stars">
           {"★★★★★".split("").map((star, i) => (
             <span key={i}>{star}</span>
           ))}
