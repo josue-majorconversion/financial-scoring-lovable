@@ -1,27 +1,52 @@
 import { Play } from "lucide-react";
+import testimonialScott from "@/assets/testimonial-scott.mp4.asset.json";
 
-const placeholders = [
-  { id: "Agent Testimonial 01", category: "Better discovery" },
+const testimonials = [
+  {
+    id: "My Sales are much higher bus using the scoring system...",
+    name: "Scott Zimmerman.",
+    videoUrl: testimonialScott.url,
+  },
   { id: "Agent Testimonial 02", category: "Greater confidence" },
   { id: "Agent Testimonial 03", category: "Stronger opportunities" },
   { id: "Agent Testimonial 04", category: "Faster closes" },
 ];
 
-function Card({ id, category }: { id: string; category: string }) {
+function Card({
+  id,
+  category,
+  name,
+  videoUrl,
+}: {
+  id: string;
+  category?: string;
+  name?: string;
+  videoUrl?: string;
+}) {
   return (
     <article className="flex h-full flex-col rounded-3xl card-surface p-4">
-      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-border bg-surface-2">
+      <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl border border-border bg-surface-2">
         <div className="absolute inset-0 grid-glow opacity-40" aria-hidden="true" />
-        <button
-          type="button"
-          disabled
-          aria-label={`${id} — video not yet available`}
-          className="absolute inset-0 grid place-items-center"
-        >
-          <span className="grid h-16 w-16 place-items-center rounded-full border border-mint/50 bg-background/70">
-            <Play className="h-6 w-6 text-mint" aria-hidden="true" />
-          </span>
-        </button>
+        {videoUrl ? (
+          <video
+            src={videoUrl}
+            controls
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+            aria-label={`${name} testimonial video`}
+          />
+        ) : (
+          <button
+            type="button"
+            disabled
+            aria-label={`${id} — video not yet available`}
+            className="absolute inset-0 grid place-items-center"
+          >
+            <span className="grid h-16 w-16 place-items-center rounded-full border border-mint/50 bg-background/70">
+              <Play className="h-6 w-6 text-mint" aria-hidden="true" />
+            </span>
+          </button>
+        )}
       </div>
       <div className="mt-5 flex flex-1 flex-col items-center text-center">
         <div className="flex gap-0.5 text-2xl text-mint" aria-label="5 out of 5 stars">
@@ -30,7 +55,11 @@ function Card({ id, category }: { id: string; category: string }) {
           ))}
         </div>
         <p className="mt-2 font-display text-xl font-bold uppercase tracking-[0.04em]">“{id}”</p>
-        <p className="mt-1 text-xs uppercase tracking-[0.18em] text-mint">{category}</p>
+        {name ? (
+          <p className="mt-1 text-xs font-bold uppercase tracking-[0.18em] text-mint">{name}</p>
+        ) : (
+          <p className="mt-1 text-xs uppercase tracking-[0.18em] text-mint">{category}</p>
+        )}
       </div>
     </article>
   );
@@ -48,8 +77,8 @@ export function VideoTestimonials() {
         </h2>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
-          {placeholders.map((p) => (
-            <Card key={p.id} {...p} />
+          {testimonials.map((t) => (
+            <Card key={t.id} {...t} />
           ))}
         </div>
       </div>
