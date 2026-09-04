@@ -3,7 +3,7 @@ import testimonialScott from "@/assets/testimonial-scott.mp4.asset.json";
 
 const testimonials = [
   {
-    id: "My Sales are much higher bus using the scoring system...",
+    id: "MY SALES ARE MUCH HIGHER BY USING THE SCORING SYSTEM...",
     name: "Scott Zimmerman.",
     videoUrl: testimonialScott.url,
   },
