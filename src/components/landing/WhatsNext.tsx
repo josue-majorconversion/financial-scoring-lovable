@@ -16,6 +16,20 @@ const steps = [
   },
 ];
 
+const included = [
+  "Access to Financial Scoring 3.0",
+  "Access to the Financial Scoring lead marketplace",
+  "High-quality leads with a verified Lead Quality Score",
+  "Comprehensive financial data for each lead",
+  "AI attached to Financial Scoring leads to help surface recommendations",
+  "Agent dashboard to manage your Financial Scoring Analyses",
+  "Access to prior FSAs with the ability to review and adjust them",
+  "Financial Scoring Analyst badge access",
+  "Skool community access",
+  "Biweekly training",
+  "Platform training",
+  "Sales and marketing training",
+];
 
 export function SkoolButton({
   variant = "primary",
@@ -82,12 +96,79 @@ export function WhatsNext() {
           ))}
         </ol>
 
-        <div className="mt-14 flex items-center justify-center gap-4">
-          <span className="h-px flex-1 max-w-[180px] bg-gradient-to-r from-transparent to-mint/40" />
-          <span className="font-display text-7xl font-black uppercase leading-none text-mint sm:text-9xl">
+        <div className="mt-10 flex items-center justify-center gap-4">
+          <span className="h-px flex-1 max-w-[140px] bg-gradient-to-r from-transparent to-mint/40" />
+          <span className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-mint">
             OR
           </span>
-          <span className="h-px flex-1 max-w-[180px] bg-gradient-to-l from-transparent to-mint/40" />
+          <span className="h-px flex-1 max-w-[140px] bg-gradient-to-l from-transparent to-mint/40" />
+        </div>
+
+        <div className="mt-10 rounded-2xl border border-mint/50 bg-[#071417]/80 p-6 shadow-[0_0_40px_-20px_rgba(0,199,212,0.35)] sm:p-10">
+          <div className="flex flex-col items-center text-center">
+            <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
+              STEP 4
+            </span>
+            <h3 className="mt-4 font-display text-3xl font-bold uppercase leading-[0.95] text-white sm:text-5xl">
+              READY TO GO ALL IN?
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              If you already know Financial Scoring is right for you, skip the free path and lock in full agent access at our event pricing.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
+            <div className="flex flex-col items-center">
+              <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
+                EVENT PRICING
+              </span>
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="font-display text-5xl font-black text-white sm:text-6xl">$129</span>
+                <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ MONTH</span>
+              </div>
+            </div>
+            <div className="hidden h-12 w-px bg-mint/20 sm:block" />
+            <div className="flex flex-col items-center">
+              <div className="flex items-baseline gap-1">
+                <span className="font-display text-5xl font-black text-mint sm:text-6xl">$949</span>
+                <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
+              </div>
+              <span className="mt-1 rounded-full bg-mint/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-mint">
+                BEST VALUE
+              </span>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <p className="text-center font-display text-sm font-semibold uppercase tracking-[0.2em] text-white">
+              WHAT’S INCLUDED
+            </p>
+            <ul className="mx-auto mt-5 grid max-w-3xl gap-x-6 gap-y-3 sm:grid-cols-2">
+              {included.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                  <svg
+                    className="mt-0.5 h-4 w-4 shrink-0 text-mint"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mt-10 flex flex-col items-center gap-3">
+            <Cta variant="primary" className="w-full sm:w-auto">
+              GET FULL ACCESS AT EVENT PRICING
+            </Cta>
+            <p className="text-xs text-muted-foreground">
+              Choose monthly or save with annual access.
+            </p>
+          </div>
         </div>
       </div>
     </section>
