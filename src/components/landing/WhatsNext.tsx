@@ -61,7 +61,7 @@ export function WhatsNext() {
         <p className="text-center text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-mint">
           WHAT TO DO NEXT
         </p>
-        <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-5xl font-bold uppercase leading-[0.95] text-white sm:text-7xl">
+        <h2 className="mx-auto mt-4 max-w-5xl text-center font-display text-6xl font-bold uppercase leading-[0.95] text-white sm:text-7xl">
           READY TO TRY IT OUT{"\u00a0"}
           <span className="text-[#3B82F6]">FOR FREE...</span>
         </h2>
