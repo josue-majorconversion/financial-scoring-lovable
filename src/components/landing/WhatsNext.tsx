@@ -115,21 +115,23 @@ export function WhatsNext() {
           </div>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
-            <div className="flex flex-col items-center">
-              <div className="mt-4 flex items-baseline gap-1">
+            <div className="flex flex-col items-center justify-end">
+              <div className="flex items-baseline gap-1">
                 <span className="font-display text-5xl font-black text-white sm:text-6xl">$129</span>
                 <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ MONTH</span>
               </div>
             </div>
             <div className="hidden h-12 w-px bg-mint/20 sm:block" />
-            <div className="flex flex-col items-center">
-              <div className="flex items-baseline gap-1">
-                <span className="font-display text-5xl font-black text-mint sm:text-6xl">$949</span>
-                <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
+            <div className="flex flex-col items-center justify-end">
+              <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1">
+                <div className="flex items-baseline gap-1">
+                  <span className="font-display text-5xl font-black text-mint sm:text-6xl">$949</span>
+                  <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ YEAR</span>
+                </div>
+                <span className="rounded-full bg-mint/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-mint">
+                  BEST VALUE
+                </span>
               </div>
-              <span className="mt-1 rounded-full bg-mint/10 px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-mint">
-                BEST VALUE
-              </span>
             </div>
           </div>
 
