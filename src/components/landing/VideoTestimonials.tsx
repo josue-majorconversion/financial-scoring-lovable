@@ -47,7 +47,7 @@ export function VideoTestimonials() {
           Real agents. <span className="text-gradient-mint">Real results.</span>
         </h2>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {placeholders.map((p) => (
             <Card key={p.id} {...p} />
           ))}
