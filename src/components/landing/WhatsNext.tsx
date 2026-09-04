@@ -136,7 +136,7 @@ export function WhatsNext() {
           </div>
 
           <p className="mt-4 text-center text-sm font-semibold uppercase tracking-[0.2em] text-mint">
-            Event pricing is available for a limited time only.
+            THIS PRICE IS AVAILABLE FOR A LIMITED TIME ONLY — DON'T WAIT...
           </p>
 
           <div className="mt-10">
