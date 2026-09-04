@@ -54,7 +54,7 @@ function Card({
             <span key={i}>{star}</span>
           ))}
         </div>
-        <p className="mt-2 font-display text-xl font-bold uppercase tracking-[0.04em]">“{id}”</p>
+        <p className="mt-2 font-display text-2xl font-bold uppercase tracking-[0.04em]">“{id}”</p>
         {name ? (
           <p className="mt-1 text-xs font-bold uppercase tracking-[0.18em] text-mint">{name}</p>
         ) : (
