@@ -16,20 +16,6 @@ const steps = [
   },
 ];
 
-const included = [
-  "Access to Financial Scoring 3.0",
-  "Access to the Financial Scoring lead marketplace",
-  "High-quality leads with a verified Lead Quality Score",
-  "Comprehensive financial data for each lead",
-  "AI attached to Financial Scoring leads to help surface recommendations",
-  "Agent dashboard to manage your Financial Scoring Analyses",
-  "Access to prior FSAs with the ability to review and adjust them",
-  "Financial Scoring Analyst badge access",
-  "Skool community access",
-  "Biweekly training",
-  "Platform training",
-  "Sales and marketing training",
-];
 
 export function SkoolButton({
   variant = "primary",
