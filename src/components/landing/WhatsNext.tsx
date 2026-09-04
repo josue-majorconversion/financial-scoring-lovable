@@ -175,7 +175,7 @@ export function WhatsNext() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Cta>
-            <p className="text-xs text-muted-foreground">
+            <p className="text-center text-xs text-muted-foreground sm:text-left">
               Event Pricing Ends September 10th. This price may not appear again.&nbsp;
             </p>
           </div>
