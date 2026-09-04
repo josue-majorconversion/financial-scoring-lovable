@@ -109,8 +109,8 @@ export function WhatsNext() {
             <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
               EVENT-ONLY FFL PRICING
             </span>
-            <h3 className="mt-4 font-display text-[2.75rem] font-bold leading-[0.95] text-white sm:text-6xl">
-              Lock in your FFL Discount<br />Before the event ends
+            <h3 className="mt-4 font-display text-[2.75rem] font-bold uppercase leading-[0.95] text-white sm:text-6xl">
+              LOCK IN YOUR FFL DISCOUNT<br />BEFORE THE EVENT ENDS
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Get full Financial Scoring access at a special event-only rate. This pricing is available here for a limited time and will not be the standard rate after the event.
