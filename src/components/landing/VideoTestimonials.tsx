@@ -4,6 +4,7 @@ const placeholders = [
   { id: "Agent Testimonial 01", category: "Better discovery" },
   { id: "Agent Testimonial 02", category: "Greater confidence" },
   { id: "Agent Testimonial 03", category: "Stronger opportunities" },
+  { id: "Agent Testimonial 04", category: "Faster closes" },
 ];
 
 function Card({ id, category }: { id: string; category: string }) {
@@ -46,7 +47,7 @@ export function VideoTestimonials() {
           Real agents. <span className="text-gradient-mint">Real results.</span>
         </h2>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {placeholders.map((p) => (
             <Card key={p.id} {...p} />
           ))}
