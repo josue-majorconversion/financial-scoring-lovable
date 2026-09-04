@@ -119,9 +119,6 @@ export function WhatsNext() {
 
           <div className="mt-8 flex flex-col items-center justify-center gap-6 sm:flex-row sm:gap-10">
             <div className="flex flex-col items-center">
-              <span className="rounded-full border border-mint/40 bg-mint/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-mint">
-                EVENT PRICING
-              </span>
               <div className="mt-4 flex items-baseline gap-1">
                 <span className="font-display text-5xl font-black text-white sm:text-6xl">$129</span>
                 <span className="text-base font-semibold uppercase tracking-wider text-muted-foreground">/ MONTH</span>
