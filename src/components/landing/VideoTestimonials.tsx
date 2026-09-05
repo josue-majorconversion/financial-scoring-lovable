@@ -2,10 +2,11 @@ import { Play } from "lucide-react";
 import testimonialScott from "@/assets/testimonial-scott.mp4.asset.json";
 import testimonialSkylar from "@/assets/testimonial-skylar.mov.asset.json";
 import testimonialKoaCasey from "@/assets/testimonial-koa-casey.mov.asset.json";
+import testimonialCasey from "@/assets/testimonial-casey.mp4.asset.json";
 
 const testimonials = [
   {
-    id: "MY SALES ARE MUCH HIGHER BY USING THE SCORING SYSTEM...",
+    id: "MY SALES ARE MUCH HIGHER BY USING THE SCORING SYSTEM",
     name: "Scott Z.",
     videoUrl: testimonialScott.url,
   },
@@ -22,7 +23,7 @@ const testimonials = [
   {
     id: "HAS CHANGED MY LIFE",
     name: "Casey C.",
-    videoUrl: testimonialKoaCasey.url,
+    videoUrl: testimonialCasey.url,
   },
 ];
 
