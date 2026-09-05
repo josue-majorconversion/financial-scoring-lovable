@@ -1,13 +1,18 @@
 import { Play } from "lucide-react";
 import testimonialScott from "@/assets/testimonial-scott.mp4.asset.json";
+import testimonialSkylar from "@/assets/testimonial-skylar.mov.asset.json";
 
 const testimonials = [
   {
     id: "MY SALES ARE MUCH HIGHER BY USING THE SCORING SYSTEM...",
-    name: "Scott Zimmerman.",
+    name: "Scott Z.",
     videoUrl: testimonialScott.url,
   },
-  { id: "Agent Testimonial 02", category: "Greater confidence" },
+  {
+    id: "GREATER OPPORTUNITIES FOR LARGER TRANSACTIONS",
+    name: "Skylar C.",
+    videoUrl: testimonialSkylar.url,
+  },
   { id: "Agent Testimonial 03", category: "Stronger opportunities" },
   { id: "Agent Testimonial 04", category: "Faster closes" },
 ];
