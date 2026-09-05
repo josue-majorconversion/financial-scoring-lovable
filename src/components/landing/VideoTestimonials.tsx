@@ -1,6 +1,7 @@
 import { Play } from "lucide-react";
 import testimonialScott from "@/assets/testimonial-scott.mp4.asset.json";
 import testimonialSkylar from "@/assets/testimonial-skylar.mov.asset.json";
+import testimonialKoaCasey from "@/assets/testimonial-koa-casey.mov.asset.json";
 
 const testimonials = [
   {
@@ -13,8 +14,16 @@ const testimonials = [
     name: "Skylar C.",
     videoUrl: testimonialSkylar.url,
   },
-  { id: "Agent Testimonial 03", category: "Stronger opportunities" },
-  { id: "Agent Testimonial 04", category: "Faster closes" },
+  {
+    id: "WE'VE HAD A GREAT EXPERIENCE",
+    name: "Koa",
+    videoUrl: testimonialKoaCasey.url,
+  },
+  {
+    id: "HAS CHANGED MY LIFE",
+    name: "Casey C.",
+    videoUrl: testimonialKoaCasey.url,
+  },
 ];
 
 function Card({
